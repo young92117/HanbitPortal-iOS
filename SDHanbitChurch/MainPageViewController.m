@@ -37,6 +37,44 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    NSString *titleString;
+    switch (_selectedCategory)
+    {
+        case 14:
+            titleString = @"목회 칼럼";
+            break;
+        case 15:
+            titleString = @"교회 소식";
+            break;
+        case 30:
+            titleString = @"설교 동영상";
+            break;
+        case 61:
+            titleString = @"설교 나눔";
+            break;
+        case 87:
+            titleString = @"말씀의 씨앗";
+            break;
+        case 201:
+            titleString = @"교회 소개";
+            break;
+        case 202:
+            titleString = @"성경 암송";
+            break;
+        case 203:
+            titleString = @"소망의 씨앗";
+            break;
+        case 204:
+            titleString = @"금주 사역";
+            break;
+        default:
+            NSLog(@"undefinded category");
+            break;
+    }
+    
+    UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
+    destViewController.title = [titleString capitalizedString];
+    
     if (_selectedCategory == 201)
     {
         PageViewController *pageViewController = (PageViewController *)segue.destinationViewController;
@@ -141,6 +179,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)prefersBottomBarHidden
+{
+    return YES;
 }
 
 // 목회칼럼 (14), 교회소식/광고 (15), 설교동영상 (30), 설교나눔 (61), 말씀의 씨앗 (87)
