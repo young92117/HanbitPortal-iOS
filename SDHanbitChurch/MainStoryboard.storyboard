@@ -18,6 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="fuw-xr-vbx" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="CrS-ba-ZyP"/>
                         <segue destination="TJi-Db-R7N" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="2l4-zX-MTx"/>
@@ -531,7 +532,7 @@
                                         </state>
                                         <connections>
                                             <action selector="mainButton09:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="Xh1-Vo-Jpe"/>
-                                            <segue destination="bac-Yl-0f7" kind="push" identifier="showAssign" customClass="SWRevealViewControllerSegue" id="Rf8-2E-fdq"/>
+                                            <segue destination="0vl-9q-eWR" kind="push" identifier="showAssign" id="Jzn-iq-aRK"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -597,8 +598,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Ear-vN-ABf"/>
-        <segue reference="fGi-Ar-SKi"/>
         <segue reference="lIt-Pj-GzJ"/>
+        <segue reference="fGi-Ar-SKi"/>
         <segue reference="O80-1c-fgW"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -115,6 +115,13 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
         
         [_viewControl loadHTMLString:html baseURL:nil];
     }
+    else if (_category == 204) // 금주 사역
+    {
+        NSString *html = [NSString stringWithFormat:
+                          @"<html><body><iframe src=\"https://docs.google.com/spreadsheet/pub?key=0Ahw6lNCJGfZ6dDNJcm9IT0lqVWVZNU5Zc3B0ZklfSGc&#038;output=html\" width=\"100%%\" scrolling=\"no\" class=\"iframe-class\" frameborder=\"0\"></iframe></body></html>"];
+        
+        [_viewControl loadHTMLString:html baseURL:nil];
+    }
     else if (_category == 304) // 예배 안내
     {
         NSString *html = [NSString stringWithFormat:
@@ -143,6 +150,13 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
                           </table></body></html>"];
         
         [_viewControl loadHTMLString:html baseURL:nil];
+    }
+    else if (_category == 305) // 문화 학교
+    {
+        NSURL *url = [NSURL URLWithString:@"http://www.sdhanbit.org/wordpress/wp-content/uploads/2013/09/"]; //2013년-가을-학기-한빛-문화-학교-강좌.jpg"];
+        NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+        
+        [_viewControl loadRequest:requestObj];
     }
 }
 

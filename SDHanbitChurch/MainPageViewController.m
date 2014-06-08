@@ -75,7 +75,7 @@
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
     destViewController.title = [titleString capitalizedString];
     
-    if (_selectedCategory == 201)
+    if (_selectedCategory == 201 || _selectedCategory == 202 || _selectedCategory == 204)
     {
         PageViewController *pageViewController = (PageViewController *)segue.destinationViewController;
         pageViewController.category = _selectedCategory;
@@ -179,11 +179,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (BOOL)prefersBottomBarHidden
-{
-    return YES;
 }
 
 // 목회칼럼 (14), 교회소식/광고 (15), 설교동영상 (30), 설교나눔 (61), 말씀의 씨앗 (87)
