@@ -178,6 +178,11 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="swQ-cZ-iL2">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="Wzd-ZQ-MbN"/>
+                        <barButtonItem key="rightBarButtonItem" title="Direction" id="fAj-tI-WEN">
+                            <connections>
+                                <action selector="directionButton:" destination="t3K-tV-MfW" id="dfP-wp-lAh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -542,7 +547,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Quf-hg-sm9">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="0uT-tP-zMJ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="NBe-ky-TTl">
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="NBe-ky-TTl">
                             <connections>
                                 <action selector="manualRequest:" destination="1SV-vQ-cnS" id="x09-0O-Uim"/>
                             </connections>
