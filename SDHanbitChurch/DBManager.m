@@ -88,10 +88,10 @@ NSString *databasePath;
             if (sqlite3_step(statement) == SQLITE_DONE)
                 isSuccess = YES;
             else
-                NSLog(@"error to add item in (%ld/%d): %s", (long)identifier, cat, sqlite3_errmsg(myDatabase));
+                NSLog(@"error to add item in (%ld/%ld): %s", (long)identifier, (long)cat, sqlite3_errmsg(myDatabase));
         }
         else
-            NSLog(@"error to prepare add in (%ld/%d): %s", (long)identifier, cat, sqlite3_errmsg(myDatabase));
+            NSLog(@"error to prepare add in (%ld/%ld): %s", (long)identifier, (long)cat, sqlite3_errmsg(myDatabase));
         
         
         sqlite3_finalize(statement);
@@ -99,7 +99,7 @@ NSString *databasePath;
         sqlite3_free(insert_stmt);
     }
     else
-        NSLog(@"open error in (%ld/%d): %s", (long)identifier, cat, sqlite3_errmsg(myDatabase));
+        NSLog(@"open error in (%ld/%ld): %s", (long)identifier, (long)cat, sqlite3_errmsg(myDatabase));
     
     return isSuccess;
 }
@@ -152,8 +152,8 @@ NSString *databasePath;
     if (sqlite3_open(dbpath, &myDatabase) == SQLITE_OK)
     {
         NSString *querySQL = [NSString stringWithFormat:
-                              @"SELECT TITLE, PUBDATE, CONTENT FROM SDHANBITCONTENTS WHERE CAT=%ld ORDER BY PUBDATE DESC LIMIT 1 OFFSET %d",
-                              (long)category, index];
+                              @"SELECT TITLE, PUBDATE, CONTENT FROM SDHANBITCONTENTS WHERE CAT=%ld ORDER BY PUBDATE DESC LIMIT 1 OFFSET %ld",
+                              (long)category, (long)index];
         //NSLog(@"SQLite>%@", querySQL);
         
         const char *query_stmt = [querySQL UTF8String];
@@ -176,7 +176,7 @@ NSString *databasePath;
             }
         }
         else
-            NSLog(@"error to get item info (%ld/%d):%s", (long)category, index, sqlite3_errmsg(myDatabase) );
+            NSLog(@"error to get item info (%ld/%ld):%s", (long)category, (long)index, sqlite3_errmsg(myDatabase) );
         
         sqlite3_finalize(statement);
         sqlite3_close(myDatabase);
