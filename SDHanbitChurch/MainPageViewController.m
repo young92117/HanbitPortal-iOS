@@ -13,6 +13,7 @@
 #import "HanbitManager.h"
 #import "HanbitCommunicator.h"
 #import "DBManager.h"
+#import "SlideMenuViewController.h"
 
 @interface MainPageViewController () <HanbitManagerDelegate> {
     NSArray *_groups;
@@ -35,37 +36,47 @@
 
 @implementation MainPageViewController
 
+// 목회칼럼 (14), 교회소식/광고 (15), 설교동영상 (30), 설교나눔 (61), 말씀의 씨앗 (87)
+NSInteger tableCategory[5] = {MENU_ID_SERMON_COLUMN,
+                              MENU_ID_CHURCH_NEWS,
+                              MENU_ID_SERMON_VIDEO,
+                              MENU_ID_SERMON_SHARE,
+                              MENU_ID_BIBLE_SEED};
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSString *titleString;
     switch (_selectedCategory)
     {
-        case 14:
+        case MENU_ID_SERMON_COLUMN:
             titleString = @"목회 칼럼";
             break;
-        case 15:
+        case MENU_ID_CHURCH_NEWS:
             titleString = @"교회 소식";
             break;
-        case 30:
+        case MENU_ID_SERMON_VIDEO:
             titleString = @"설교 동영상";
             break;
-        case 61:
+        case MENU_ID_SERMON_SHARE:
             titleString = @"설교 나눔";
             break;
-        case 87:
+        case MENU_ID_BIBLE_SEED:
             titleString = @"말씀의 씨앗";
             break;
-        case 201:
+        case MENU_ID_CHURCH_INTRO:
             titleString = @"교회 소개";
             break;
-        case 202:
+        case MENU_ID_BIBLE_AMSONG:
             titleString = @"성경 암송";
             break;
-        case 203:
+        case MENU_ID_HOPE_SEED:
             titleString = @"소망의 씨앗";
             break;
-        case 204:
+        case MENU_ID_WEEKLY_ASSIGN:
             titleString = @"금주 사역";
+            break;
+        case MENU_ID_CULTURE_SCHOOL:
+            titleString = @"문화 학교";
             break;
         default:
             NSLog(@"undefinded category");
@@ -75,7 +86,7 @@
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
     destViewController.title = [titleString capitalizedString];
     
-    if (_selectedCategory == 201 || _selectedCategory == 202 || _selectedCategory == 204)
+    if (_selectedCategory == MENU_ID_CHURCH_INTRO || _selectedCategory == MENU_ID_BIBLE_AMSONG || _selectedCategory == MENU_ID_WEEKLY_ASSIGN)
     {
         PageViewController *pageViewController = (PageViewController *)segue.destinationViewController;
         pageViewController.category = _selectedCategory;
@@ -131,14 +142,12 @@
     
     NSLog( @"[database] total:%ld, cat14:%ld, cat15:%ld, cat30:%ld, cat61:%ld, cat87:%ld",
           (long)[DBManager numberOfTotalItems],
-          (long)[DBManager numberOfItemsAtCategory:14],
-          (long)[DBManager numberOfItemsAtCategory:15],
-          (long)[DBManager numberOfItemsAtCategory:30],
-          (long)[DBManager numberOfItemsAtCategory:61],
-          (long)[DBManager numberOfItemsAtCategory:87]);
+          (long)[DBManager numberOfItemsAtCategory:MENU_ID_SERMON_COLUMN],
+          (long)[DBManager numberOfItemsAtCategory:MENU_ID_CHURCH_NEWS],
+          (long)[DBManager numberOfItemsAtCategory:MENU_ID_SERMON_VIDEO],
+          (long)[DBManager numberOfItemsAtCategory:MENU_ID_SERMON_SHARE],
+          (long)[DBManager numberOfItemsAtCategory:MENU_ID_BIBLE_SEED]);
 
-    // 목회칼럼 (14), 교회소식/광고 (15), 설교동영상 (30), 설교나눔 (61), 말씀의 씨앗 (87)
-    NSInteger tableCategory[5] = {14, 15, 30, 61, 87};
     for (int i=0; i<5; i++)
     {
         NSInteger category = tableCategory[i];
@@ -185,53 +194,51 @@
 // 교회소개 (201), 성경암송 (202), 소망의 씨앗 (203), 금주사역 (204)
 - (IBAction)mainButton01:(id)sender
 {
-    _selectedCategory = 201;
+    _selectedCategory = MENU_ID_CHURCH_INTRO;
 }
 
 - (IBAction)mainButton02:(id)sender
 {
-    _selectedCategory = 30;
+    _selectedCategory = MENU_ID_SERMON_VIDEO;
 }
 
 - (IBAction)mainButton03:(id)sender
 {
-    _selectedCategory = 61;
+    _selectedCategory = MENU_ID_SERMON_SHARE;
 }
 
 - (IBAction)mainButton04:(id)sender
 {
-    _selectedCategory = 14;
+    _selectedCategory = MENU_ID_SERMON_COLUMN;
 }
 
 - (IBAction)mainButton05:(id)sender
 {
-    _selectedCategory = 87;
+    _selectedCategory = MENU_ID_BIBLE_SEED;
 }
 
 - (IBAction)mainButton06:(id)sender
 {
-    _selectedCategory = 202;
+    _selectedCategory = MENU_ID_BIBLE_AMSONG;
 }
 
 - (IBAction)mainButton07:(id)sender
 {
-    _selectedCategory = 15;
+    _selectedCategory = MENU_ID_CHURCH_NEWS;
 }
 
 - (IBAction)mainButton08:(id)sender
 {
-    _selectedCategory = 203;
+    _selectedCategory = MENU_ID_CULTURE_SCHOOL;
 }
 
 - (IBAction)mainButton09:(id)sender
 {
-    _selectedCategory = 204;
+    _selectedCategory = MENU_ID_WEEKLY_ASSIGN;
 }
 
 - (IBAction)manualRequest:(id)sender
 {
-    // 목회칼럼 (14), 교회소식/광고 (15), 설교동영상 (30), 설교나눔 (61), 말씀의 씨앗 (87)
-    NSInteger tableCategory[5] = {14, 15, 30, 61, 87};
     for (int i=0; i<5; i++)
     {
         NSInteger category = tableCategory[i];

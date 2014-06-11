@@ -21,18 +21,34 @@
 
 @implementation SlideMenuViewController
 
-NSInteger slideMenuIndex[19] = {0, 1, 2, 2, 2,
-                                4, 1, 2, 3, 3,
-                                2, 1, 3, 3, 3,
-                                1, 3, 2, 2};
+NSInteger slideMenuIndex[17] = {0, 1, 2, 2, 4,
+                                1, 2, 3, 3, 2,
+                                1, 3, 3, 1, 3,
+                                2, 2};
 
 // dynamic information: 목회칼럼 (14), 교회소식/광고 (15), 설교동영상 (30), 설교나눔 (61), 말씀의 씨앗 (87)
 // static  information: 교회소개 (201), 성경암송 (202), 소망의 씨앗 (203), 금주사역 (204)
-//                      담임목사 소개 (301), 섬기는 이들 (302), 인사말 (303), 예배 안내 (304), 문화 학교 (305)
-NSInteger slideMenuCategory[19] = {  0,   0, 301, 302, 303,
-                                     0,   0, 304,  30,  61,
-                                   202,   0,  14,  87, 203,
-                                     0,  15, 204, 305};
+//                      담임목사 소개 (301), 섬기는 이들 (302), 예배 안내 (304), 문화 학교 (305)
+NSInteger slideMenuCategory[17] = { MENU_ID_NULL,
+                                    MENU_ID_NULL,
+                                    MENU_ID_MAINPASTOR,
+                                    MENU_ID_CHURCH_STAFF,
+                                    MENU_ID_NULL,
+    
+                                    MENU_ID_NULL,
+                                    MENU_ID_WORSHIP_INFO,
+                                    MENU_ID_SERMON_VIDEO,
+                                    MENU_ID_SERMON_SHARE,
+                                    MENU_ID_BIBLE_AMSONG,
+    
+                                    MENU_ID_NULL,
+                                    MENU_ID_SERMON_COLUMN,
+                                    MENU_ID_BIBLE_SEED,
+                                    MENU_ID_NULL,
+                                    MENU_ID_CHURCH_NEWS,
+    
+                                    MENU_ID_WEEKLY_ASSIGN,
+                                    MENU_ID_CULTURE_SCHOOL};
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -61,18 +77,16 @@ NSInteger slideMenuCategory[19] = {  0,   0, 301, 302, 303,
                        @"교회 소개",   // 1, sub title
                        @"담임목사 소개",
                        @"섬기는 이들",
-                       @"인사말",
                        @"오시는 길",
-                       @"예배",       // 6, sub title
+                       @"예배",       // 5, sub title
                        @"예배 안내",
                        @"설교 동영상",
                        @"설교 나눔",
                        @"성경 암송",
-                       @"목회",       // 11, sub title
+                       @"목회",       // 10, sub title
                        @"목회 칼럼",
                        @"말씀의 씨앗",
-                       @"소망의 씨앗",
-                       @"공지사항",    // 15, sub title
+                       @"공지사항",    // 13, sub title
                        @"교회 소식",
                        @"금주 사역",
                        @"문화 학교",];

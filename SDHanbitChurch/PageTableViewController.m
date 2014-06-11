@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import "ItemViewController.h"
 #import "DBManager.h"
+#import "SlideMenuViewController.h"
 
 @interface PageTableViewController ()
 
@@ -78,7 +79,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (_category == 30)
+    if (_category == MENU_ID_SERMON_VIDEO)
         return 88;
     else
         return 48;
@@ -92,23 +93,16 @@
     // static  information: 교회소개 (201), 성경암송 (202), 소망의 씨앗 (203), 금주사역 (204)
    switch (_category)
     {
-        case 14:
-            CellIdentifier = @"columnCell";
+        case MENU_ID_SERMON_COLUMN:
+        case MENU_ID_CHURCH_NEWS:
+        case MENU_ID_SERMON_SHARE:
+            CellIdentifier = @"titleOnlyCell";
             break;
-        case 15:
-            CellIdentifier = @"newsCell";
-            break;
-        case 30:
+        case MENU_ID_SERMON_VIDEO:
             CellIdentifier = @"sermonCell";
             break;
-        case 61:
-            CellIdentifier = @"shareCell";
-            break;
-        case 87:
-            CellIdentifier = @"noteCell";
-            break;
-        case 202:
-            CellIdentifier = @"bibleCell";
+        case MENU_ID_BIBLE_SEED:
+            CellIdentifier = @"titleDateCell";
             break;
         default:
             NSLog(@"undefinded category");
@@ -128,14 +122,17 @@
     UILabel *tableLabelTitle = (UILabel *)[cell viewWithTag:100];
     tableLabelTitle.text = data->_title;
 
-    NSRange strYearRange = {0,4}, strMonthRange = {4,2}, strDayRange = {6,2};
-    UILabel *tableLabelDate = (UILabel *)[cell viewWithTag:101];
-    tableLabelDate.text = [NSString stringWithFormat:@"%@-%@-%@",
-                           [data->_pubdate substringWithRange:strYearRange],
-                           [data->_pubdate substringWithRange:strMonthRange],
-                           [data->_pubdate substringWithRange:strDayRange]];
+    if (_category == MENU_ID_SERMON_VIDEO || _category == MENU_ID_BIBLE_SEED)
+    {
+        NSRange strYearRange = {0,4}, strMonthRange = {4,2}, strDayRange = {6,2};
+        UILabel *tableLabelDate = (UILabel *)[cell viewWithTag:101];
+        tableLabelDate.text = [NSString stringWithFormat:@"%@-%@-%@",
+                               [data->_pubdate substringWithRange:strYearRange],
+                               [data->_pubdate substringWithRange:strMonthRange],
+                               [data->_pubdate substringWithRange:strDayRange]];
+    }
     
-    if (_category == 30)
+    if (_category == MENU_ID_SERMON_VIDEO)
     {
         UIWebView *videoView = (UIWebView *)[cell viewWithTag:102];
         NSString *youtubeId = [self extractYoutubeID:data->_content];

@@ -9,6 +9,7 @@
 #import "PageViewController.h"
 #import "SWRevealViewController.h"
 #import "BibleContextsTable.h"
+#import "SlideMenuViewController.h"
 
 @interface PageViewController ()
 
@@ -67,7 +68,7 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
     NSString *path = [[NSBundle mainBundle] bundlePath];
     NSURL *baseURL = [NSURL fileURLWithPath:path];
     
-    if (_category == 201) // 교회 소개
+    if (_category == MENU_ID_CHURCH_INTRO) // 교회 소개
     {
         NSString *html = [NSString stringWithFormat:
                           @"<html><body bgcolor=#CEF6F5 style=\"font-family:arial;color:black;font-size:15px;margin:10px\"> \
@@ -93,7 +94,7 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
                           
         [_viewControl loadHTMLString:html baseURL:baseURL];
     }
-    else if (_category == 202) // 성경 암송
+    else if (_category == MENU_ID_BIBLE_AMSONG) // 성경 암송
     {
         [self getThisWeekInfo];
         
@@ -111,7 +112,7 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
         
         [_viewControl loadHTMLString:html baseURL:baseURL];
     }
-    else if (_category == 204) // 금주 사역
+    else if (_category == MENU_ID_WEEKLY_ASSIGN) // 금주 사역
     {
         NSString *html = [NSString stringWithFormat:
                           @"<html><body><iframe src=\"https://docs.google.com/spreadsheet/pub?key=0Ahw6lNCJGfZ6dDNJcm9IT0lqVWVZNU5Zc3B0ZklfSGc&#038;output=html\" width=\"100%%\" scrolling=\"no\" class=\"iframe-class\" frameborder=\"0\"></iframe></body></html>"];
@@ -119,7 +120,7 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
         _viewControl.scalesPageToFit = YES;
         [_viewControl loadHTMLString:html baseURL:nil];
     }
-    else if (_category == 301) // 담임목사 소개
+    else if (_category == MENU_ID_MAINPASTOR) // 담임목사 소개
     {
         NSString *html = [NSString stringWithFormat:
                           @"<html><body bgcolor=#E0F8F7 style=\"font-family:arial;color:black;font-size:15px;margin:10px\"> \
@@ -131,7 +132,7 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
     
         [_viewControl loadHTMLString:html baseURL:baseURL];
     }
-    else if (_category == 302) // 섬기는 이들
+    else if (_category == MENU_ID_CHURCH_STAFF) // 섬기는 이들
     {
         NSString *html = [NSString stringWithFormat:
                           @"<html><body bgcolor=#E0F8F7 style=\"font-family:arial;color:black;font-size:15px;margin:10px\"> \
@@ -174,16 +175,7 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
         
         [_viewControl loadHTMLString:html baseURL:baseURL];
     }
-    else if (_category == 303) // 인사말
-    {
-        NSString *html = [NSString stringWithFormat:
-                          @"<html><body bgcolor=#E0F8F7 style=\"font-family:arial;color:black;font-size:15px;margin:10px\"> \
-                          <p>under construction</p> \
-                          </body></html>"];
-        
-        [_viewControl loadHTMLString:html baseURL:nil];
-    }
-    else if (_category == 304) // 예배 안내
+    else if (_category == MENU_ID_WORSHIP_INFO) // 예배 안내
     {
         NSString *html = [NSString stringWithFormat:
                           @"<html><body background=\"%@\"> \
@@ -213,7 +205,7 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
         
         [_viewControl loadHTMLString:html baseURL:baseURL];
     }
-    else if (_category == 305) // 문화 학교
+    else if (_category == MENU_ID_CULTURE_SCHOOL) // 문화 학교
     {
         NSURL *url = [NSURL URLWithString:@"http://www.sdhanbit.org/wordpress/wp-content/uploads/2013/09/"]; //2013년-가을-학기-한빛-문화-학교-강좌.jpg"];
         NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
