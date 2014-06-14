@@ -14,6 +14,7 @@
 #import "HanbitCommunicator.h"
 #import "DBManager.h"
 #import "SlideMenuViewController.h"
+#import "BibleViewController.h"
 
 @interface MainPageViewController () <HanbitManagerDelegate> {
     NSArray *_groups;
@@ -86,10 +87,19 @@ NSInteger tableCategory[5] = {MENU_ID_SERMON_COLUMN,
     UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
     destViewController.title = [titleString capitalizedString];
     
-    if (_selectedCategory == MENU_ID_CHURCH_INTRO || _selectedCategory == MENU_ID_BIBLE_AMSONG || _selectedCategory == MENU_ID_WEEKLY_ASSIGN)
+    if (_selectedCategory == MENU_ID_CHURCH_INTRO || _selectedCategory == MENU_ID_WEEKLY_ASSIGN)
     {
         PageViewController *pageViewController = (PageViewController *)segue.destinationViewController;
         pageViewController.category = _selectedCategory;
+    }
+    else if (_selectedCategory == MENU_ID_BIBLE_AMSONG)
+    {
+        NSInteger thisWeekBiblePageIndex = [BibleViewController getThisWeekInfo];
+
+        BibleViewController *bibleViewController = (BibleViewController *)segue.destinationViewController;
+        bibleViewController.category = _selectedCategory;
+        bibleViewController.biblePageIndex = thisWeekBiblePageIndex;
+        bibleViewController.pageMode = 0;
     }
     else
     {

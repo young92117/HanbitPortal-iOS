@@ -145,6 +145,30 @@
                                     <segue destination="t3K-tV-MfW" kind="custom" identifier="showMap" customClass="SWRevealViewControllerSegue" id="pcT-Rs-2Dq"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="bibleHandler" id="ZCl-rO-odY">
+                                <rect key="frame" x="0.0" y="222" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZCl-rO-odY" id="ZMi-mb-FvY">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9gO-PG-I5r">
+                                            <rect key="frame" x="20" y="6" width="32" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bible View Handler" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJ2-Nu-1MH">
+                                            <rect key="frame" x="60" y="6" width="240" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="tN0-XJ-yYm" kind="custom" identifier="showBible" customClass="SWRevealViewControllerSegue" id="pcX-5n-nCb"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="fuw-xr-vbx" id="rBn-FO-qlb"/>
@@ -154,7 +178,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1o-pR-8hO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-584" y="-667"/>
+            <point key="canvasLocation" x="-584" y="-787"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="RtA-2B-p7B">
@@ -192,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QvT-Sn-Do2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="-1433"/>
+            <point key="canvasLocation" x="101" y="519"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="VuM-38-o0v">
@@ -226,7 +250,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Enj-I5-MfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="-1433"/>
+            <point key="canvasLocation" x="1316" y="-1289"/>
+        </scene>
+        <!--Bible View Controller-->
+        <scene sceneID="hja-7k-h4h">
+            <objects>
+                <viewController id="tN0-XJ-yYm" customClass="BibleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2iN-KU-aSu"/>
+                        <viewControllerLayoutGuide type="bottom" id="W9i-PB-WwS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y7b-FA-bAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bi-5T-zLG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="niD-RQ-72w">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Prev" id="5Ui-d7-wfI">
+                                        <connections>
+                                            <action selector="prevPage:" destination="tN0-XJ-yYm" id="8K7-gx-D56"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="UDP-T1-x2a"/>
+                                    <barButtonItem title="Hint" id="xyF-Dh-PyH">
+                                        <connections>
+                                            <action selector="hintToggle:" destination="tN0-XJ-yYm" id="1TN-Wh-Rpt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5ue-f9-mze"/>
+                                    <barButtonItem title="Next" id="jhH-6T-q4A">
+                                        <connections>
+                                            <action selector="nextPage:" destination="tN0-XJ-yYm" id="dig-N9-OJI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hNT-eW-9qp">
+                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="c5n-tI-JFU"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="sidebarButton" destination="c5n-tI-JFU" id="qG9-LR-Lvf"/>
+                        <outlet property="viewControl" destination="1bi-5T-zLG" id="7mW-1C-tnt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VoR-7l-jDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1316" y="519"/>
         </scene>
         <!--Page Table View Controller-->
         <scene sceneID="UKC-3M-BPd">
@@ -326,7 +408,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD7-im-AyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="-559"/>
+            <point key="canvasLocation" x="1316" y="-401"/>
         </scene>
         <!--Item View Controller-->
         <scene sceneID="gsX-9Q-2ct">
@@ -355,7 +437,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0e-SW-g86" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1280" y="-559"/>
+            <point key="canvasLocation" x="1904" y="-401"/>
         </scene>
         <!--Main Page View Controller - MainPage-->
         <scene sceneID="h5Q-ac-Lel">
@@ -409,7 +491,7 @@
                                 </state>
                                 <connections>
                                     <action selector="mainButton06:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="xOF-eg-x6W"/>
-                                    <segue destination="0vl-9q-eWR" kind="push" identifier="showBible" id="KIH-gj-Idf"/>
+                                    <segue destination="tN0-XJ-yYm" kind="push" identifier="showBible" id="LsH-Yu-v3u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="107" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYI-fE-83y">
@@ -487,7 +569,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFg-1b-Bth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="-100"/>
+            <point key="canvasLocation" x="101" y="-401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mdp-dT-Uqk">
@@ -529,8 +611,9 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Ear-vN-ABf"/>
-        <segue reference="fGi-Ar-SKi"/>
-        <segue reference="lIt-Pj-GzJ"/>
+        <segue reference="LsH-Yu-v3u"/>
+        <segue reference="Z48-pI-mNA"/>
+        <segue reference="2ps-gY-aRy"/>
         <segue reference="lyX-NR-dL7"/>
     </inferredMetricsTieBreakers>
 </document>

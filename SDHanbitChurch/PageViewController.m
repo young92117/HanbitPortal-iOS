@@ -8,7 +8,6 @@
 
 #import "PageViewController.h"
 #import "SWRevealViewController.h"
-#import "BibleContextsTable.h"
 #import "SlideMenuViewController.h"
 
 @interface PageViewController ()
@@ -20,27 +19,7 @@
 
 @implementation PageViewController
 
-NSInteger base2014ChVerse = 12*3 + 4; // based on 1st week of 2014
-NSInteger thisWeekCh;
-NSInteger thisWeekVerse;
-NSInteger thisWeekDay;
-NSInteger thisTimeHour;
 NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"getty.jpg", @"brightsky.jpg"};
-
-- (void) getThisWeekInfo
-{
-    NSDate *now = [NSDate date];
-    NSCalendar *calender = [NSCalendar currentCalendar];
-    NSInteger thisWeekOfYear = [[calender components: NSWeekOfYearCalendarUnit fromDate:now] weekOfYear] - 1;
-    thisWeekDay = [[calender components: NSWeekdayCalendarUnit fromDate:now] weekday];
-    thisTimeHour = [[calender components: NSHourCalendarUnit fromDate:now] hour];
-    
-    if( thisWeekOfYear != 0 && thisWeekDay == 1 && thisTimeHour < 12) // sunday morning, still need to display the previous week
-        thisWeekOfYear = thisWeekOfYear - 1;
-    
-    thisWeekCh = ((base2014ChVerse + thisWeekOfYear) / 12) % 5;
-    thisWeekVerse = (base2014ChVerse + thisWeekOfYear) % 12;
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -92,24 +71,6 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
                           가정교회를 통한 섬김의 실천 이웃을 돌아보는 커뮤니티 사역 학원과 해외선교의 사명 실천</p></blockquote> \
                           <p>&nbsp;</p></body></html>"];
                           
-        [_viewControl loadHTMLString:html baseURL:baseURL];
-    }
-    else if (_category == MENU_ID_BIBLE_AMSONG) // 성경 암송
-    {
-        [self getThisWeekInfo];
-        
-        NSInteger bibleIndex = (thisWeekCh*12 + thisWeekVerse) % 5;
-
-        // this week's bible verse
-        NSString *html = [NSString stringWithFormat:
-                          @"<html><body background=\"%@\" style=\"margin:15px\"><P><big>%@</big></P>%@<br><br> \
-                          <P><big>%@</big></P>%@<br></body></html>",
-                          backImageList[bibleIndex],
-                          korTitleString[thisWeekCh][thisWeekVerse],
-                          korTextString[thisWeekCh][thisWeekVerse],
-                          engTitleString[thisWeekCh][thisWeekVerse],
-                          engTextString[thisWeekCh][thisWeekVerse]];
-        
         [_viewControl loadHTMLString:html baseURL:baseURL];
     }
     else if (_category == MENU_ID_WEEKLY_ASSIGN) // 금주 사역

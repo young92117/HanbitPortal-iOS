@@ -10,6 +10,7 @@
 #import "SWRevealViewController.h"
 #import "PageTableViewController.h"
 #import "PageViewController.h"
+#import "BibleViewController.h"
 
 @interface SlideMenuViewController ()
 
@@ -22,7 +23,7 @@
 @implementation SlideMenuViewController
 
 NSInteger slideMenuIndex[17] = {0, 1, 2, 2, 4,
-                                1, 2, 3, 3, 2,
+                                1, 2, 3, 3, 5,
                                 1, 3, 3, 1, 3,
                                 2, 2};
 
@@ -95,7 +96,8 @@ NSInteger slideMenuCategory[17] = { MENU_ID_NULL,
                                  @"inlineHandler",
                                  @"viewHandler",
                                  @"tableHandler",
-                                 @"mapHandler"];
+                                 @"mapHandler",
+                                 @"bibleHandler"];
     
     self.slideMenuIcons = @[@"email-open.png", ];
 }
@@ -171,8 +173,17 @@ NSInteger slideMenuCategory[17] = { MENU_ID_NULL,
     }
     else if( [segue.identifier isEqualToString:@"showView"] )
     {
-        PageViewController *ViewController = (PageViewController*)segue.destinationViewController;
-        ViewController.category = slideMenuCategory[indexPath.row];
+        PageViewController *viewController = (PageViewController*)segue.destinationViewController;
+        viewController.category = slideMenuCategory[indexPath.row];
+    }
+    else if( [segue.identifier isEqualToString:@"showBible"] )
+    {
+        NSInteger thisWeekBiblePageIndex = [BibleViewController getThisWeekInfo];
+
+        BibleViewController *bibleViewController = (BibleViewController*)segue.destinationViewController;
+        bibleViewController.category = slideMenuCategory[indexPath.row];
+        bibleViewController.biblePageIndex = thisWeekBiblePageIndex;
+        bibleViewController.pageMode = 0;
     }
     else if( [segue.identifier isEqualToString:@"showMap"] )
     {

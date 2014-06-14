@@ -53,6 +53,7 @@
 		E13BCF4818C4E326008BF212 /* main_words.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3D18C4E326008BF212 /* main_words.png */; };
 		E13BCF4E18C4E39D008BF212 /* hanbit_address.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF4A18C4E39D008BF212 /* hanbit_address.png */; };
 		E13BCF4F18C4E39D008BF212 /* hanbit_logo_160.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF4B18C4E39D008BF212 /* hanbit_logo_160.png */; };
+		E152B534194BF97200AC54B7 /* BibleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E152B533194BF97200AC54B7 /* BibleViewController.m */; };
 		E1875A2F193C2E660068BE7B /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1875A2E193C2E660068BE7B /* ItemViewController.m */; };
 		E19C3CB81932B304007A61C2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E19C3CB71932B304007A61C2 /* libsqlite3.dylib */; };
 		E19C3CBB1932B366007A61C2 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E19C3CBA1932B366007A61C2 /* DBManager.m */; };
@@ -149,6 +150,8 @@
 		E13BCF3D18C4E326008BF212 /* main_words.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_words.png; path = Images/main_words.png; sourceTree = "<group>"; };
 		E13BCF4A18C4E39D008BF212 /* hanbit_address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hanbit_address.png; path = Images/hanbit_address.png; sourceTree = "<group>"; };
 		E13BCF4B18C4E39D008BF212 /* hanbit_logo_160.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hanbit_logo_160.png; path = Images/hanbit_logo_160.png; sourceTree = "<group>"; };
+		E152B532194BF97200AC54B7 /* BibleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibleViewController.h; sourceTree = "<group>"; };
+		E152B533194BF97200AC54B7 /* BibleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BibleViewController.m; sourceTree = "<group>"; };
 		E1875A2D193C2E660068BE7B /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
 		E1875A2E193C2E660068BE7B /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 		E19C3CB71932B304007A61C2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -247,6 +250,8 @@
 				E1002FA518C1D2180079F2D8 /* AppDelegate.m */,
 				E10CBE541942EC9300FDFADF /* BibleContextsTable.h */,
 				E10CBE551942EC9300FDFADF /* BibleContextsTable.m */,
+				E152B532194BF97200AC54B7 /* BibleViewController.h */,
+				E152B533194BF97200AC54B7 /* BibleViewController.m */,
 				E1002FA718C1D2180079F2D8 /* Images.xcassets */,
 				E19C3CB91932B366007A61C2 /* DBManager.h */,
 				E19C3CBA1932B366007A61C2 /* DBManager.m */,
@@ -523,6 +528,7 @@
 				E1002FC718C1D2DB0079F2D8 /* SWRevealViewController.m in Sources */,
 				E19C3CBB1932B366007A61C2 /* DBManager.m in Sources */,
 				E1CA3DB118CEE9F800C35EF5 /* HanbitCommunicator.m in Sources */,
+				E152B534194BF97200AC54B7 /* BibleViewController.m in Sources */,
 				E1C36DBB18C38E4200AF90DE /* PageViewController.m in Sources */,
 				E137397C18D17FC1004C37A2 /* GroupBuilder.m in Sources */,
 			);
