@@ -99,39 +99,44 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
                           @"<html><body bgcolor=#E0F8F7 style=\"font-family:arial;color:black;font-size:15px;margin:10px\"> \
                           <h3>김용환 목사</h3> \
                           <img src=\"Hanbit_KimYH.jpg\"> \
-                          <blockquote>예배/청년부/성인교육<br>가족: 황혜정, 호중, 윤중<br>(858) 776-6300<br> \
+                          <blockquote>예배/청년부/성인교육<br>가족: 황혜정, 호중, 윤중<br> \
                           <a href=\"mailto:ydcfkim@hotmail.com\">ydcfkim@hotmail.com</a></blockquote> \
                           <h3>문인권 목사</h3> \
                           <img src=\"Hanbit_MoonIK.jpg\"> \
-                          <blockquote>선교/대학부<br>가족: 양연주, 희연, 희민<br>(858) 888-5566<br> \
+                          <blockquote>선교/대학부<br>가족: 양연주, 희연, 희민<br> \
                           <a href=\"joey.moons@gmail.com\">joey.moons@gmail.com</a></blockquote> \
                           <h3>임제성 목사</h3> \
                           <img src=\"Hanbit_LimYS.png\"> \
-                          <blockquote>찬양/예배부<br>가족: 서윤주, 준혁, 주은<br>(213) 705-0004<br> \
+                          <blockquote>찬양/예배부<br>가족: 서윤주, 준혁, 주은<br> \
                           <a href=\"ljs7004@hotmai.com\">ljs7004@hotmai.com</a></blockquote> \
                           <h3>신인호 목사</h3> \
                           <img src=\"Hanbit_Shin.png\"> \
-                          <blockquote>박선아, 신율<br>(626) 437-9112<br> \
+                          <blockquote>가족: 박선아, 신율<br> \
                           <a href=\"nationshin@gmail.com\">nationshin@gmail.com</a></blockquote> \
                           <h3>윤홍순 전도사</h3> \
                           <img src=\"Hanbit_YoonHS.jpg\"> \
-                          <blockquote>목양/목장<br>가족: 윤창호, 재성, 혜인<br>(619) 261-2875<br> \
+                          <blockquote>목양/목장<br>가족: 윤창호, 재성, 혜인<br> \
                           <a href=\"sunk75@gmail.com\">sunk75@gmail.com</a></blockquote> \
                           <h3>한주리 전도사</h3> \
                           <img src=\"Hanbit_HanJL.jpg\"> \
-                          <blockquote>유치부/아기학교<br>가족: 이우람<br>(858) 945-4069<br> \
+                          <blockquote>유치부/아기학교<br>가족: 이우람<br> \
                           <a href=\"han_princess@hotmail.com\">han_princess@hotmail.com</a></blockquote> \
                           <h3>임강영 전도사</h3> \
                           <img src=\"Hanbit_ImKY.jpg\"> \
-                          <blockquote>고등부<br>가족: 이한빛, 임 준<br>(951) 375-6275<br> \
+                          <blockquote>고등부<br>가족: 이한빛, 임 준<br> \
                           <a href=\"alabheng@msn.com\">alabheng@msn.com</a></blockquote> \
                           <h3>홍영락 전도사</h3> \
                           <img src=\"Hanbit_HongSteve.jpg\"> \
-                          <blockquote>중등부/천사부<br>(858) 382-6258<br> \
+                          <blockquote>중등부/천사부<br> \
                           <a href=\"davyhong07@gmail.com\">davyhong07@gmail.com</a></blockquote> \
                           <h3>김동률 전도사</h3> \
                           <img src=\"Hanbit_KimDR.jpg\"> \
+                          <blockquote>유년부<br> \
+                          <br></blockquote> \
                           <h3>조원화 전도사</h3> \
+                          <img src=\"Hanbit_ChoYH.jpg\"> \
+                          <blockquote>유아부<br> \
+                          <br></blockquote> \
                           </body></html>"];
         
         [_viewControl loadHTMLString:html baseURL:baseURL];

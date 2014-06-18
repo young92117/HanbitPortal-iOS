@@ -124,12 +124,18 @@
 
     if (_category == MENU_ID_SERMON_VIDEO || _category == MENU_ID_BIBLE_SEED)
     {
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyyMMddHHmm"];
+        NSDate *pubDate = [dateFormatter dateFromString:data->_pubdate];
+        NSCalendar *calender = [NSCalendar currentCalendar];
+        NSInteger thisWeekDay = [[calender components: NSWeekdayCalendarUnit fromDate:pubDate] weekday];
+        
         NSRange strYearRange = {0,4}, strMonthRange = {4,2}, strDayRange = {6,2};
         UILabel *tableLabelDate = (UILabel *)[cell viewWithTag:101];
-        tableLabelDate.text = [NSString stringWithFormat:@"%@-%@-%@",
+        tableLabelDate.text = [NSString stringWithFormat:@"%@-%@-%02ld",
                                [data->_pubdate substringWithRange:strYearRange],
                                [data->_pubdate substringWithRange:strMonthRange],
-                               [data->_pubdate substringWithRange:strDayRange]];
+                               (long)([data->_pubdate substringWithRange:strDayRange].intValue - thisWeekDay + 1)];
     }
     
     if (_category == MENU_ID_SERMON_VIDEO)

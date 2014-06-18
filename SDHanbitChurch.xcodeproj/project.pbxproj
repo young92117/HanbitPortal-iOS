@@ -25,6 +25,7 @@
 		E1002FD318C1D7AA0079F2D8 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = E1002FD118C1D7AA0079F2D8 /* menu.png */; };
 		E1002FD418C1D7AA0079F2D8 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1002FD218C1D7AA0079F2D8 /* menu@2x.png */; };
 		E1002FDA18C1E5C70079F2D8 /* SlideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1002FD918C1E5C70079F2D8 /* SlideMenuViewController.m */; };
+		E104CCA61951504900D50B25 /* Hanbit_ChoYH.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E104CCA51951504900D50B25 /* Hanbit_ChoYH.jpg */; };
 		E106E0E5193EF38D004DCEF9 /* cross5-mac-640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = E106E0E4193EF38D004DCEF9 /* cross5-mac-640x960.png */; };
 		E106E0E8193EF85A004DCEF9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E106E0E7193EF85A004DCEF9 /* MapViewController.m */; };
 		E106E0EA193EFEB6004DCEF9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E106E0E9193EFEB6004DCEF9 /* MapKit.framework */; };
@@ -117,6 +118,7 @@
 		E1002FD218C1D7AA0079F2D8 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "Images/menu@2x.png"; sourceTree = "<group>"; };
 		E1002FD818C1E5C70079F2D8 /* SlideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuViewController.h; sourceTree = "<group>"; };
 		E1002FD918C1E5C70079F2D8 /* SlideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuViewController.m; sourceTree = "<group>"; };
+		E104CCA51951504900D50B25 /* Hanbit_ChoYH.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Hanbit_ChoYH.jpg; path = Images/Hanbit_ChoYH.jpg; sourceTree = "<group>"; };
 		E106E0E4193EF38D004DCEF9 /* cross5-mac-640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cross5-mac-640x960.png"; path = "Images/cross5-mac-640x960.png"; sourceTree = "<group>"; };
 		E106E0E6193EF85A004DCEF9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		E106E0E7193EF85A004DCEF9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				E13BCF4B18C4E39D008BF212 /* hanbit_logo_160.png */,
 				E1B540661944441000BA692A /* Hanbit_HanJL.jpg */,
 				E1B540671944441000BA692A /* Hanbit_HongSteve.jpg */,
+				E104CCA51951504900D50B25 /* Hanbit_ChoYH.jpg */,
 				E1B540681944441000BA692A /* Hanbit_ImKY.jpg */,
 				E1B540691944441000BA692A /* Hanbit_KimDR.jpg */,
 				E1B5406A1944441000BA692A /* Hanbit_KimYH.jpg */,
@@ -498,6 +501,7 @@
 				E1002FA018C1D2180079F2D8 /* InfoPlist.strings in Resources */,
 				E12351D818C2F751003C81BD /* hanbit_logo.png in Resources */,
 				E1002FA818C1D2180079F2D8 /* Images.xcassets in Resources */,
+				E104CCA61951504900D50B25 /* Hanbit_ChoYH.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
