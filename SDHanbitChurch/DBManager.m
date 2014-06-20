@@ -85,10 +85,21 @@ NSString *databasePath;
         
         if (sqlResult == SQLITE_OK)
         {
-            if (sqlite3_step(statement) == SQLITE_DONE)
-                isSuccess = YES;
-            else
-                NSLog(@"error to add item in (%ld/%ld): %s", (long)identifier, (long)cat, sqlite3_errmsg(myDatabase));
+            getDBBusy = YES;
+            while (getDBBusy == YES)
+            {
+                sqlResult = sqlite3_step(statement);
+                if (sqlResult == SQLITE_BUSY)
+                    [NSThread sleepForTimeInterval:0.02]; // sleep for 20 ms for SQLite to be ready
+                else
+                {
+                    getDBBusy = NO;
+                    if (sqlResult == SQLITE_DONE)
+                        isSuccess = YES;
+                    else
+                        NSLog(@"error to add item in (%ld/%ld): %s", (long)identifier, (long)cat, sqlite3_errmsg(myDatabase));
+                }
+            }
         }
         else
             NSLog(@"error to prepare add in (%ld/%ld): %s", (long)identifier, (long)cat, sqlite3_errmsg(myDatabase));

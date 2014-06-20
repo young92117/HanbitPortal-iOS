@@ -22,32 +22,27 @@
 
 @implementation SlideMenuViewController
 
-NSInteger slideMenuIndex[17] = {0, 1, 2, 2, 4,
-                                1, 2, 3, 3, 5,
-                                1, 3, 3, 1, 3,
-                                2, 2};
+NSInteger slideMenuIndex[14] = {0, 2, 2, 2, 4,
+                                2, 3, 3, 5, 3,
+                                3, 3, 2, 2};
 
 // dynamic information: 목회칼럼 (14), 교회소식/광고 (15), 설교동영상 (30), 설교나눔 (61), 말씀의 씨앗 (87)
 // static  information: 교회소개 (201), 성경암송 (202), 소망의 씨앗 (203), 금주사역 (204)
 //                      담임목사 소개 (301), 섬기는 이들 (302), 예배 안내 (304), 문화 학교 (305)
-NSInteger slideMenuCategory[17] = { MENU_ID_NULL,
-                                    MENU_ID_NULL,
+NSInteger slideMenuCategory[14] = { MENU_ID_NULL,
+                                    MENU_ID_CHURCH_INTRO,
                                     MENU_ID_MAINPASTOR,
                                     MENU_ID_CHURCH_STAFF,
                                     MENU_ID_NULL,
     
-                                    MENU_ID_NULL,
                                     MENU_ID_WORSHIP_INFO,
                                     MENU_ID_SERMON_VIDEO,
                                     MENU_ID_SERMON_SHARE,
                                     MENU_ID_BIBLE_AMSONG,
-    
-                                    MENU_ID_NULL,
                                     MENU_ID_SERMON_COLUMN,
+
                                     MENU_ID_BIBLE_SEED,
-                                    MENU_ID_NULL,
                                     MENU_ID_CHURCH_NEWS,
-    
                                     MENU_ID_WEEKLY_ASSIGN,
                                     MENU_ID_CULTURE_SCHOOL};
 
@@ -75,22 +70,19 @@ NSInteger slideMenuCategory[17] = { MENU_ID_NULL,
     self.tableView.separatorColor = [UIColor colorWithWhite:0.15f alpha:0.2f];
     
     self.menuItems = @[@"Hanbit Church",
-                       @"교회 소개",   // 1, sub title
+                       @"교회 소개",
                        @"담임목사 소개",
                        @"섬기는 이들",
                        @"오시는 길",
-                       @"예배",       // 5, sub title
                        @"예배 안내",
                        @"설교 동영상",
                        @"설교 나눔",
                        @"성경 암송",
-                       @"목회",       // 10, sub title
                        @"목회 칼럼",
                        @"말씀의 씨앗",
-                       @"공지사항",    // 13, sub title
                        @"교회 소식",
                        @"금주 사역",
-                       @"문화 학교",];
+                       @"문화 학교"];
     
     self.slideMenuIdentifier = @[@"title",
                                  @"inlineHandler",
@@ -141,6 +133,11 @@ NSInteger slideMenuCategory[17] = { MENU_ID_NULL,
         UILabel *menuNameLabel = (UILabel *)[cell viewWithTag:101];
         menuNameLabel.text = self.menuItems[indexPath.row]; 
     }
+    else if( slideMenuIndex[indexPath.row] == 0 )
+    {
+        UILabel *menuNameLabel = (UILabel *)[cell viewWithTag:101];
+        menuNameLabel.text = @"하나님이 기뻐하시는 교회, 따뜻한 교회, 섬기는 교회";
+    }
     else
     {
         UILabel *menuNameLabel = (UILabel *)[cell viewWithTag:200];
@@ -152,10 +149,12 @@ NSInteger slideMenuCategory[17] = { MENU_ID_NULL,
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if( slideMenuIndex[indexPath.row] == 1 )
-        return 22;
+    if( slideMenuIndex[indexPath.row] == 0 )
+        return 60;
+    else if( slideMenuIndex[indexPath.row] == 1 )
+        return 24;
     else
-        return 40;
+        return 48;
 }
 
 - (void) prepareForSegue: (UIStoryboardSegue *) segue sender: (id) sender
