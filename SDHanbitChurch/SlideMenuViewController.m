@@ -91,7 +91,20 @@ NSInteger slideMenuCategory[14] = { MENU_ID_NULL,
                                  @"mapHandler",
                                  @"bibleHandler"];
     
-    self.slideMenuIcons = @[@"email-open.png", ];
+    self.slideMenuIcons = @[@"",
+                            @"main_sdhanbit_icon.png",
+                            @"email-open.png",
+                            @"email-open.png",
+                            @"email-open.png",
+                            @"email-open.png",
+                            @"main_sermon_icon",
+                            @"main_share_icon",
+                            @"main_recitation_icon",
+                            @"main_ministry_icon",
+                            @"main_words_icon",
+                            @"main_news_icon",
+                            @"main_actions_icon",
+                            @"email-open.png",];
 }
 
 - (void)didReceiveMemoryWarning
@@ -120,7 +133,7 @@ NSInteger slideMenuCategory[14] = { MENU_ID_NULL,
     NSString *imageName = nil;
 
     CellIdentifier = self.slideMenuIdentifier[slideMenuIndex[indexPath.row]];
-    imageName = self.slideMenuIcons[0];
+    imageName = self.slideMenuIcons[indexPath.row];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
