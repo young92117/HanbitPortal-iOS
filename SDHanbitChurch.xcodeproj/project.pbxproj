@@ -29,27 +29,32 @@
 		E106E0E5193EF38D004DCEF9 /* cross5-mac-640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = E106E0E4193EF38D004DCEF9 /* cross5-mac-640x960.png */; };
 		E106E0E8193EF85A004DCEF9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E106E0E7193EF85A004DCEF9 /* MapViewController.m */; };
 		E106E0EA193EFEB6004DCEF9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E106E0E9193EFEB6004DCEF9 /* MapKit.framework */; };
+		E107139219555F460037BC97 /* main_actions_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138119555F460037BC97 /* main_actions_icon.png */; };
+		E107139319555F460037BC97 /* main_actions.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138219555F460037BC97 /* main_actions.png */; };
+		E107139419555F460037BC97 /* main_hopes.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138319555F460037BC97 /* main_hopes.png */; };
+		E107139519555F460037BC97 /* main_ministry_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138419555F460037BC97 /* main_ministry_icon.png */; };
+		E107139619555F460037BC97 /* main_ministry.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138519555F460037BC97 /* main_ministry.png */; };
+		E107139719555F460037BC97 /* main_news_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138619555F460037BC97 /* main_news_icon.png */; };
+		E107139819555F460037BC97 /* main_news.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138719555F460037BC97 /* main_news.png */; };
+		E107139919555F460037BC97 /* main_recitation_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138819555F460037BC97 /* main_recitation_icon.png */; };
+		E107139A19555F460037BC97 /* main_recitation.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138919555F460037BC97 /* main_recitation.png */; };
+		E107139B19555F460037BC97 /* main_sdhanbit_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138A19555F460037BC97 /* main_sdhanbit_icon.png */; };
+		E107139C19555F460037BC97 /* main_sdhanbit.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138B19555F460037BC97 /* main_sdhanbit.png */; };
+		E107139D19555F460037BC97 /* main_sermon_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138C19555F460037BC97 /* main_sermon_icon.png */; };
+		E107139E19555F460037BC97 /* main_sermon.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138D19555F460037BC97 /* main_sermon.png */; };
+		E107139F19555F460037BC97 /* main_share_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138E19555F460037BC97 /* main_share_icon.png */; };
+		E10713A019555F460037BC97 /* main_share.png in Resources */ = {isa = PBXBuildFile; fileRef = E107138F19555F460037BC97 /* main_share.png */; };
+		E10713A119555F460037BC97 /* main_words_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E107139019555F460037BC97 /* main_words_icon.png */; };
+		E10713A219555F460037BC97 /* main_words.png in Resources */ = {isa = PBXBuildFile; fileRef = E107139119555F460037BC97 /* main_words.png */; };
+		E10713A4195566130037BC97 /* main_map_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E10713A3195566130037BC97 /* main_map_icon.png */; };
+		E10713A61955675E0037BC97 /* main_staff_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E10713A51955675E0037BC97 /* main_staff_icon.png */; };
+		E10713A819556C9C0037BC97 /* main_worship_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E10713A719556C9C0037BC97 /* main_worship_icon.png */; };
+		E10713AA19556DA30037BC97 /* main_pastor_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E10713A919556DA30037BC97 /* main_pastor_icon.png */; };
 		E10CBE561942EC9300FDFADF /* BibleContextsTable.m in Sources */ = {isa = PBXBuildFile; fileRef = E10CBE551942EC9300FDFADF /* BibleContextsTable.m */; };
 		E10CBE581942F96200FDFADF /* bird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E10CBE571942F96200FDFADF /* bird.jpg */; };
 		E10CBE5A1942F97400FDFADF /* cross.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E10CBE591942F97400FDFADF /* cross.jpg */; };
 		E10CBE5C1942F99000FDFADF /* getty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E10CBE5B1942F99000FDFADF /* getty.jpg */; };
 		E10CBE5E1942F9B800FDFADF /* yellowtree2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E10CBE5D1942F9B800FDFADF /* yellowtree2.jpg */; };
-		E1146B981954091B00FFA20A /* main_actions_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B881954091B00FFA20A /* main_actions_icon.png */; };
-		E1146B991954091B00FFA20A /* main_actions.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B891954091B00FFA20A /* main_actions.png */; };
-		E1146B9A1954091B00FFA20A /* main_ministry_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B8A1954091B00FFA20A /* main_ministry_icon.png */; };
-		E1146B9B1954091B00FFA20A /* main_ministry.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B8B1954091B00FFA20A /* main_ministry.png */; };
-		E1146B9C1954091B00FFA20A /* main_news_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B8C1954091B00FFA20A /* main_news_icon.png */; };
-		E1146B9D1954091B00FFA20A /* main_news.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B8D1954091B00FFA20A /* main_news.png */; };
-		E1146B9E1954091B00FFA20A /* main_recitation_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B8E1954091B00FFA20A /* main_recitation_icon.png */; };
-		E1146B9F1954091B00FFA20A /* main_recitation.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B8F1954091B00FFA20A /* main_recitation.png */; };
-		E1146BA01954091B00FFA20A /* main_sdhanbit_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B901954091B00FFA20A /* main_sdhanbit_icon.png */; };
-		E1146BA11954091B00FFA20A /* main_sdhanbit.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B911954091B00FFA20A /* main_sdhanbit.png */; };
-		E1146BA21954091B00FFA20A /* main_sermon_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B921954091B00FFA20A /* main_sermon_icon.png */; };
-		E1146BA31954091B00FFA20A /* main_sermon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B931954091B00FFA20A /* main_sermon.png */; };
-		E1146BA41954091B00FFA20A /* main_share_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B941954091B00FFA20A /* main_share_icon.png */; };
-		E1146BA51954091B00FFA20A /* main_share.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B951954091B00FFA20A /* main_share.png */; };
-		E1146BA61954091B00FFA20A /* main_words_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B961954091B00FFA20A /* main_words_icon.png */; };
-		E1146BA71954091B00FFA20A /* main_words.png in Resources */ = {isa = PBXBuildFile; fileRef = E1146B971954091B00FFA20A /* main_words.png */; };
 		E123191E193D8448007FC07F /* cross5-mac.png in Resources */ = {isa = PBXBuildFile; fileRef = E123191D193D8448007FC07F /* cross5-mac.png */; };
 		E1231922193D86EE007FC07F /* AppIcon_58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = E123191F193D86EE007FC07F /* AppIcon_58x58.png */; };
 		E1231923193D86EE007FC07F /* AppIcon_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = E1231920193D86EE007FC07F /* AppIcon_80x80.png */; };
@@ -58,16 +63,6 @@
 		E137397918D17D58004C37A2 /* HanbitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E137397818D17D58004C37A2 /* HanbitManager.m */; };
 		E137397C18D17FC1004C37A2 /* GroupBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E137397B18D17FC1004C37A2 /* GroupBuilder.m */; };
 		E1379F5A18C3A80B004ACD79 /* brightsky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1379F5918C3A80B004ACD79 /* brightsky.jpg */; };
-		E13BCF3F18C4E326008BF212 /* main_actions.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3418C4E326008BF212 /* main_actions.png */; };
-		E13BCF4018C4E326008BF212 /* main_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3518C4E326008BF212 /* main_background.jpg */; };
-		E13BCF4118C4E326008BF212 /* main_hopes.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3618C4E326008BF212 /* main_hopes.png */; };
-		E13BCF4218C4E326008BF212 /* main_ministry.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3718C4E326008BF212 /* main_ministry.png */; };
-		E13BCF4318C4E326008BF212 /* main_news.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3818C4E326008BF212 /* main_news.png */; };
-		E13BCF4418C4E326008BF212 /* main_recitation.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3918C4E326008BF212 /* main_recitation.png */; };
-		E13BCF4518C4E326008BF212 /* main_sdhanbit.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3A18C4E326008BF212 /* main_sdhanbit.png */; };
-		E13BCF4618C4E326008BF212 /* main_sermon.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3B18C4E326008BF212 /* main_sermon.png */; };
-		E13BCF4718C4E326008BF212 /* main_share.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3C18C4E326008BF212 /* main_share.png */; };
-		E13BCF4818C4E326008BF212 /* main_words.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF3D18C4E326008BF212 /* main_words.png */; };
 		E13BCF4E18C4E39D008BF212 /* hanbit_address.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF4A18C4E39D008BF212 /* hanbit_address.png */; };
 		E13BCF4F18C4E39D008BF212 /* hanbit_logo_160.png in Resources */ = {isa = PBXBuildFile; fileRef = E13BCF4B18C4E39D008BF212 /* hanbit_logo_160.png */; };
 		E152B534194BF97200AC54B7 /* BibleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E152B533194BF97200AC54B7 /* BibleViewController.m */; };
@@ -139,28 +134,33 @@
 		E106E0E6193EF85A004DCEF9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		E106E0E7193EF85A004DCEF9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		E106E0E9193EFEB6004DCEF9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E107138119555F460037BC97 /* main_actions_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_actions_icon.png; path = Images/main_actions_icon.png; sourceTree = "<group>"; };
+		E107138219555F460037BC97 /* main_actions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_actions.png; path = Images/main_actions.png; sourceTree = "<group>"; };
+		E107138319555F460037BC97 /* main_hopes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_hopes.png; path = Images/main_hopes.png; sourceTree = "<group>"; };
+		E107138419555F460037BC97 /* main_ministry_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_ministry_icon.png; path = Images/main_ministry_icon.png; sourceTree = "<group>"; };
+		E107138519555F460037BC97 /* main_ministry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_ministry.png; path = Images/main_ministry.png; sourceTree = "<group>"; };
+		E107138619555F460037BC97 /* main_news_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_news_icon.png; path = Images/main_news_icon.png; sourceTree = "<group>"; };
+		E107138719555F460037BC97 /* main_news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_news.png; path = Images/main_news.png; sourceTree = "<group>"; };
+		E107138819555F460037BC97 /* main_recitation_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_recitation_icon.png; path = Images/main_recitation_icon.png; sourceTree = "<group>"; };
+		E107138919555F460037BC97 /* main_recitation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_recitation.png; path = Images/main_recitation.png; sourceTree = "<group>"; };
+		E107138A19555F460037BC97 /* main_sdhanbit_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sdhanbit_icon.png; path = Images/main_sdhanbit_icon.png; sourceTree = "<group>"; };
+		E107138B19555F460037BC97 /* main_sdhanbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sdhanbit.png; path = Images/main_sdhanbit.png; sourceTree = "<group>"; };
+		E107138C19555F460037BC97 /* main_sermon_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sermon_icon.png; path = Images/main_sermon_icon.png; sourceTree = "<group>"; };
+		E107138D19555F460037BC97 /* main_sermon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sermon.png; path = Images/main_sermon.png; sourceTree = "<group>"; };
+		E107138E19555F460037BC97 /* main_share_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_share_icon.png; path = Images/main_share_icon.png; sourceTree = "<group>"; };
+		E107138F19555F460037BC97 /* main_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_share.png; path = Images/main_share.png; sourceTree = "<group>"; };
+		E107139019555F460037BC97 /* main_words_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_words_icon.png; path = Images/main_words_icon.png; sourceTree = "<group>"; };
+		E107139119555F460037BC97 /* main_words.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_words.png; path = Images/main_words.png; sourceTree = "<group>"; };
+		E10713A3195566130037BC97 /* main_map_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_map_icon.png; path = Images/main_map_icon.png; sourceTree = "<group>"; };
+		E10713A51955675E0037BC97 /* main_staff_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_staff_icon.png; path = Images/main_staff_icon.png; sourceTree = "<group>"; };
+		E10713A719556C9C0037BC97 /* main_worship_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_worship_icon.png; path = Images/main_worship_icon.png; sourceTree = "<group>"; };
+		E10713A919556DA30037BC97 /* main_pastor_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_pastor_icon.png; path = Images/main_pastor_icon.png; sourceTree = "<group>"; };
 		E10CBE541942EC9300FDFADF /* BibleContextsTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibleContextsTable.h; sourceTree = "<group>"; };
 		E10CBE551942EC9300FDFADF /* BibleContextsTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BibleContextsTable.m; sourceTree = "<group>"; };
 		E10CBE571942F96200FDFADF /* bird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bird.jpg; path = Images/bird.jpg; sourceTree = "<group>"; };
 		E10CBE591942F97400FDFADF /* cross.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cross.jpg; path = Images/cross.jpg; sourceTree = "<group>"; };
 		E10CBE5B1942F99000FDFADF /* getty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = getty.jpg; path = Images/getty.jpg; sourceTree = "<group>"; };
 		E10CBE5D1942F9B800FDFADF /* yellowtree2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = yellowtree2.jpg; path = Images/yellowtree2.jpg; sourceTree = "<group>"; };
-		E1146B881954091B00FFA20A /* main_actions_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_actions_icon.png; path = Images/main_actions_icon.png; sourceTree = "<group>"; };
-		E1146B891954091B00FFA20A /* main_actions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_actions.png; path = Images/main_actions.png; sourceTree = "<group>"; };
-		E1146B8A1954091B00FFA20A /* main_ministry_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_ministry_icon.png; path = Images/main_ministry_icon.png; sourceTree = "<group>"; };
-		E1146B8B1954091B00FFA20A /* main_ministry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_ministry.png; path = Images/main_ministry.png; sourceTree = "<group>"; };
-		E1146B8C1954091B00FFA20A /* main_news_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_news_icon.png; path = Images/main_news_icon.png; sourceTree = "<group>"; };
-		E1146B8D1954091B00FFA20A /* main_news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_news.png; path = Images/main_news.png; sourceTree = "<group>"; };
-		E1146B8E1954091B00FFA20A /* main_recitation_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_recitation_icon.png; path = Images/main_recitation_icon.png; sourceTree = "<group>"; };
-		E1146B8F1954091B00FFA20A /* main_recitation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_recitation.png; path = Images/main_recitation.png; sourceTree = "<group>"; };
-		E1146B901954091B00FFA20A /* main_sdhanbit_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sdhanbit_icon.png; path = Images/main_sdhanbit_icon.png; sourceTree = "<group>"; };
-		E1146B911954091B00FFA20A /* main_sdhanbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sdhanbit.png; path = Images/main_sdhanbit.png; sourceTree = "<group>"; };
-		E1146B921954091B00FFA20A /* main_sermon_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sermon_icon.png; path = Images/main_sermon_icon.png; sourceTree = "<group>"; };
-		E1146B931954091B00FFA20A /* main_sermon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sermon.png; path = Images/main_sermon.png; sourceTree = "<group>"; };
-		E1146B941954091B00FFA20A /* main_share_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_share_icon.png; path = Images/main_share_icon.png; sourceTree = "<group>"; };
-		E1146B951954091B00FFA20A /* main_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_share.png; path = Images/main_share.png; sourceTree = "<group>"; };
-		E1146B961954091B00FFA20A /* main_words_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_words_icon.png; path = Images/main_words_icon.png; sourceTree = "<group>"; };
-		E1146B971954091B00FFA20A /* main_words.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_words.png; path = Images/main_words.png; sourceTree = "<group>"; };
 		E123191D193D8448007FC07F /* cross5-mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cross5-mac.png"; path = "Images/cross5-mac.png"; sourceTree = "<group>"; };
 		E123191F193D86EE007FC07F /* AppIcon_58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon_58x58.png; path = Images/AppIcon_58x58.png; sourceTree = "<group>"; };
 		E1231920193D86EE007FC07F /* AppIcon_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon_80x80.png; path = Images/AppIcon_80x80.png; sourceTree = "<group>"; };
@@ -172,16 +172,6 @@
 		E137397A18D17FC1004C37A2 /* GroupBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupBuilder.h; sourceTree = "<group>"; };
 		E137397B18D17FC1004C37A2 /* GroupBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupBuilder.m; sourceTree = "<group>"; };
 		E1379F5918C3A80B004ACD79 /* brightsky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = brightsky.jpg; path = Images/brightsky.jpg; sourceTree = "<group>"; };
-		E13BCF3418C4E326008BF212 /* main_actions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_actions.png; path = Images/main_actions.png; sourceTree = "<group>"; };
-		E13BCF3518C4E326008BF212 /* main_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = main_background.jpg; path = Images/main_background.jpg; sourceTree = "<group>"; };
-		E13BCF3618C4E326008BF212 /* main_hopes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_hopes.png; path = Images/main_hopes.png; sourceTree = "<group>"; };
-		E13BCF3718C4E326008BF212 /* main_ministry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_ministry.png; path = Images/main_ministry.png; sourceTree = "<group>"; };
-		E13BCF3818C4E326008BF212 /* main_news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_news.png; path = Images/main_news.png; sourceTree = "<group>"; };
-		E13BCF3918C4E326008BF212 /* main_recitation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_recitation.png; path = Images/main_recitation.png; sourceTree = "<group>"; };
-		E13BCF3A18C4E326008BF212 /* main_sdhanbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sdhanbit.png; path = Images/main_sdhanbit.png; sourceTree = "<group>"; };
-		E13BCF3B18C4E326008BF212 /* main_sermon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_sermon.png; path = Images/main_sermon.png; sourceTree = "<group>"; };
-		E13BCF3C18C4E326008BF212 /* main_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_share.png; path = Images/main_share.png; sourceTree = "<group>"; };
-		E13BCF3D18C4E326008BF212 /* main_words.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main_words.png; path = Images/main_words.png; sourceTree = "<group>"; };
 		E13BCF4A18C4E39D008BF212 /* hanbit_address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hanbit_address.png; path = Images/hanbit_address.png; sourceTree = "<group>"; };
 		E13BCF4B18C4E39D008BF212 /* hanbit_logo_160.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hanbit_logo_160.png; path = Images/hanbit_logo_160.png; sourceTree = "<group>"; };
 		E152B532194BF97200AC54B7 /* BibleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BibleViewController.h; sourceTree = "<group>"; };
@@ -371,6 +361,27 @@
 				E106E0E4193EF38D004DCEF9 /* cross5-mac-640x960.png */,
 				E13BCF4A18C4E39D008BF212 /* hanbit_address.png */,
 				E13BCF4B18C4E39D008BF212 /* hanbit_logo_160.png */,
+				E107138119555F460037BC97 /* main_actions_icon.png */,
+				E107138219555F460037BC97 /* main_actions.png */,
+				E107138319555F460037BC97 /* main_hopes.png */,
+				E10713A3195566130037BC97 /* main_map_icon.png */,
+				E107138419555F460037BC97 /* main_ministry_icon.png */,
+				E107138519555F460037BC97 /* main_ministry.png */,
+				E107138619555F460037BC97 /* main_news_icon.png */,
+				E107138719555F460037BC97 /* main_news.png */,
+				E10713A919556DA30037BC97 /* main_pastor_icon.png */,
+				E107138819555F460037BC97 /* main_recitation_icon.png */,
+				E107138919555F460037BC97 /* main_recitation.png */,
+				E107138A19555F460037BC97 /* main_sdhanbit_icon.png */,
+				E107138B19555F460037BC97 /* main_sdhanbit.png */,
+				E107138C19555F460037BC97 /* main_sermon_icon.png */,
+				E107138D19555F460037BC97 /* main_sermon.png */,
+				E107138E19555F460037BC97 /* main_share_icon.png */,
+				E107138F19555F460037BC97 /* main_share.png */,
+				E10713A51955675E0037BC97 /* main_staff_icon.png */,
+				E107139019555F460037BC97 /* main_words_icon.png */,
+				E107139119555F460037BC97 /* main_words.png */,
+				E10713A719556C9C0037BC97 /* main_worship_icon.png */,
 				E1B540661944441000BA692A /* Hanbit_HanJL.jpg */,
 				E1B540671944441000BA692A /* Hanbit_HongSteve.jpg */,
 				E104CCA51951504900D50B25 /* Hanbit_ChoYH.jpg */,
@@ -382,32 +393,6 @@
 				E1B686E61944C33E003F0058 /* Hanbit_PastorMain_400x600.jpg */,
 				E1B5406D1944441000BA692A /* Hanbit_Shin.png */,
 				E1B5406E1944441000BA692A /* Hanbit_YoonHS.jpg */,
-				E1146B881954091B00FFA20A /* main_actions_icon.png */,
-				E1146B891954091B00FFA20A /* main_actions.png */,
-				E1146B8A1954091B00FFA20A /* main_ministry_icon.png */,
-				E1146B8B1954091B00FFA20A /* main_ministry.png */,
-				E1146B8C1954091B00FFA20A /* main_news_icon.png */,
-				E1146B8D1954091B00FFA20A /* main_news.png */,
-				E1146B8E1954091B00FFA20A /* main_recitation_icon.png */,
-				E1146B8F1954091B00FFA20A /* main_recitation.png */,
-				E1146B901954091B00FFA20A /* main_sdhanbit_icon.png */,
-				E1146B911954091B00FFA20A /* main_sdhanbit.png */,
-				E1146B921954091B00FFA20A /* main_sermon_icon.png */,
-				E1146B931954091B00FFA20A /* main_sermon.png */,
-				E1146B941954091B00FFA20A /* main_share_icon.png */,
-				E1146B951954091B00FFA20A /* main_share.png */,
-				E1146B961954091B00FFA20A /* main_words_icon.png */,
-				E1146B971954091B00FFA20A /* main_words.png */,
-				E13BCF3418C4E326008BF212 /* main_actions.png */,
-				E13BCF3518C4E326008BF212 /* main_background.jpg */,
-				E13BCF3618C4E326008BF212 /* main_hopes.png */,
-				E13BCF3718C4E326008BF212 /* main_ministry.png */,
-				E13BCF3818C4E326008BF212 /* main_news.png */,
-				E13BCF3918C4E326008BF212 /* main_recitation.png */,
-				E13BCF3A18C4E326008BF212 /* main_sdhanbit.png */,
-				E13BCF3B18C4E326008BF212 /* main_sermon.png */,
-				E13BCF3C18C4E326008BF212 /* main_share.png */,
-				E13BCF3D18C4E326008BF212 /* main_words.png */,
 				E1C36DA618C38B5D00AF90DE /* bg_main_actions.jpg */,
 				E1C36DA718C38B5D00AF90DE /* bg_main_hopes.jpg */,
 				E1C36DA818C38B5D00AF90DE /* bg_main_ministry.jpg */,
@@ -502,70 +487,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E107139319555F460037BC97 /* main_actions.png in Resources */,
+				E107139919555F460037BC97 /* main_recitation_icon.png in Resources */,
+				E10713A219555F460037BC97 /* main_words.png in Resources */,
 				E1B686E71944C33E003F0058 /* Hanbit_PastorMain_400x600.jpg in Resources */,
 				E10CBE5A1942F97400FDFADF /* cross.jpg in Resources */,
 				E10CBE5C1942F99000FDFADF /* getty.jpg in Resources */,
 				E1002FD318C1D7AA0079F2D8 /* menu.png in Resources */,
 				E1231922193D86EE007FC07F /* AppIcon_58x58.png in Resources */,
-				E1146B9A1954091B00FFA20A /* main_ministry_icon.png in Resources */,
-				E1146BA61954091B00FFA20A /* main_words_icon.png in Resources */,
-				E1146BA31954091B00FFA20A /* main_sermon.png in Resources */,
+				E107139819555F460037BC97 /* main_news.png in Resources */,
 				E1231923193D86EE007FC07F /* AppIcon_80x80.png in Resources */,
+				E10713A819556C9C0037BC97 /* main_worship_icon.png in Resources */,
 				E1B540711944441000BA692A /* Hanbit_ImKY.jpg in Resources */,
 				E1B540731944441000BA692A /* Hanbit_KimYH.jpg in Resources */,
-				E1146BA21954091B00FFA20A /* main_sermon_icon.png in Resources */,
 				E1B540761944441000BA692A /* Hanbit_Shin.png in Resources */,
-				E13BCF4518C4E326008BF212 /* main_sdhanbit.png in Resources */,
-				E1146B991954091B00FFA20A /* main_actions.png in Resources */,
-				E13BCF4118C4E326008BF212 /* main_hopes.png in Resources */,
 				E106E0E5193EF38D004DCEF9 /* cross5-mac-640x960.png in Resources */,
-				E1146B981954091B00FFA20A /* main_actions_icon.png in Resources */,
-				E1146B9D1954091B00FFA20A /* main_news.png in Resources */,
+				E107139F19555F460037BC97 /* main_share_icon.png in Resources */,
 				E1C36DB318C38B5D00AF90DE /* bg_main_sermon.jpg in Resources */,
-				E1146BA11954091B00FFA20A /* main_sdhanbit.png in Resources */,
-				E13BCF4218C4E326008BF212 /* main_ministry.png in Resources */,
-				E1146B9C1954091B00FFA20A /* main_news_icon.png in Resources */,
+				E107139419555F460037BC97 /* main_hopes.png in Resources */,
 				E1B540771944441000BA692A /* Hanbit_YoonHS.jpg in Resources */,
+				E107139719555F460037BC97 /* main_news_icon.png in Resources */,
 				E1002FCA18C1D3A20079F2D8 /* MainStoryboard.storyboard in Resources */,
 				E1379F5A18C3A80B004ACD79 /* brightsky.jpg in Resources */,
-				E13BCF4318C4E326008BF212 /* main_news.png in Resources */,
+				E10713AA19556DA30037BC97 /* main_pastor_icon.png in Resources */,
 				E1C36DB518C38B5D00AF90DE /* bg_main_words.jpg in Resources */,
 				E123191E193D8448007FC07F /* cross5-mac.png in Resources */,
-				E1146BA51954091B00FFA20A /* main_share.png in Resources */,
 				E1C36DB218C38B5D00AF90DE /* bg_main_recitation.jpg in Resources */,
 				E1B540721944441000BA692A /* Hanbit_KimDR.jpg in Resources */,
+				E107139519555F460037BC97 /* main_ministry_icon.png in Resources */,
 				E1B686E51944B7B1003F0058 /* Hanbit_MoonIK.jpg in Resources */,
 				E10CBE581942F96200FDFADF /* bird.jpg in Resources */,
 				E1231924193D86EE007FC07F /* AppIcon_120x120.png in Resources */,
-				E13BCF4718C4E326008BF212 /* main_share.png in Resources */,
+				E107139E19555F460037BC97 /* main_sermon.png in Resources */,
 				E1B540701944441000BA692A /* Hanbit_HongSteve.jpg in Resources */,
 				E1C36DAE18C38B5D00AF90DE /* bg_main_actions.jpg in Resources */,
 				E1C36DAF18C38B5D00AF90DE /* bg_main_hopes.jpg in Resources */,
-				E1146BA01954091B00FFA20A /* main_sdhanbit_icon.png in Resources */,
-				E13BCF4018C4E326008BF212 /* main_background.jpg in Resources */,
 				E1B540741944441000BA692A /* Hanbit_LimYS.png in Resources */,
-				E13BCF4418C4E326008BF212 /* main_recitation.png in Resources */,
 				E1C36DB418C38B5D00AF90DE /* bg_main_share.jpg in Resources */,
 				E1C36DB118C38B5D00AF90DE /* bg_main_news.jpg in Resources */,
+				E10713A61955675E0037BC97 /* main_staff_icon.png in Resources */,
 				E1B5406F1944441000BA692A /* Hanbit_HanJL.jpg in Resources */,
-				E13BCF3F18C4E326008BF212 /* main_actions.png in Resources */,
+				E107139B19555F460037BC97 /* main_sdhanbit_icon.png in Resources */,
 				E1C36DBD18C3925600AF90DE /* email-open.png in Resources */,
+				E107139619555F460037BC97 /* main_ministry.png in Resources */,
+				E107139D19555F460037BC97 /* main_sermon_icon.png in Resources */,
 				E13BCF4E18C4E39D008BF212 /* hanbit_address.png in Resources */,
-				E1146B9E1954091B00FFA20A /* main_recitation_icon.png in Resources */,
-				E1146B9F1954091B00FFA20A /* main_recitation.png in Resources */,
-				E13BCF4618C4E326008BF212 /* main_sermon.png in Resources */,
-				E1146BA71954091B00FFA20A /* main_words.png in Resources */,
-				E13BCF4818C4E326008BF212 /* main_words.png in Resources */,
-				E1146B9B1954091B00FFA20A /* main_ministry.png in Resources */,
 				E1002FD418C1D7AA0079F2D8 /* menu@2x.png in Resources */,
 				E10CBE5E1942F9B800FDFADF /* yellowtree2.jpg in Resources */,
 				E1C36DB018C38B5D00AF90DE /* bg_main_ministry.jpg in Resources */,
 				E13BCF4F18C4E39D008BF212 /* hanbit_logo_160.png in Resources */,
-				E1146BA41954091B00FFA20A /* main_share_icon.png in Resources */,
+				E107139219555F460037BC97 /* main_actions_icon.png in Resources */,
+				E10713A019555F460037BC97 /* main_share.png in Resources */,
 				E1002FA018C1D2180079F2D8 /* InfoPlist.strings in Resources */,
 				E12351D818C2F751003C81BD /* hanbit_logo.png in Resources */,
 				E1002FA818C1D2180079F2D8 /* Images.xcassets in Resources */,
+				E107139A19555F460037BC97 /* main_recitation.png in Resources */,
+				E10713A119555F460037BC97 /* main_words_icon.png in Resources */,
 				E104CCA61951504900D50B25 /* Hanbit_ChoYH.jpg in Resources */,
+				E10713A4195566130037BC97 /* main_map_icon.png in Resources */,
+				E107139C19555F460037BC97 /* main_sdhanbit.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
