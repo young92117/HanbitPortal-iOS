@@ -106,6 +106,7 @@ NSString *backBibleImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg"
     
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    [self.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
     
     if (_category == MENU_ID_BIBLE_AMSONG) // 성경 암송
     {

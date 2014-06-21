@@ -123,17 +123,16 @@ NSInteger tableCategory[5] = {MENU_ID_SERMON_COLUMN,
     
     self.title = @"샌디에고 한빛교회";
     
-    SWRevealViewController *revealController = [self revealViewController];
-    
-    [revealController panGestureRecognizer];
-    [revealController tapGestureRecognizer];
-    
     // Change button color
     _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
-    _sidebarButton.target = revealController;
+    _sidebarButton.target = self.revealViewController;
     _sidebarButton.action = @selector(revealToggle:);
+
+    // Set the gesture
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    [self.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
     
     _manager = [[HanbitManager alloc] init];
     _manager.communicator = [[HanbitCommunicator alloc] init];
