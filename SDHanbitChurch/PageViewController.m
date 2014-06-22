@@ -45,6 +45,9 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     [self.view addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
     
+    //[_viewControl addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    //[_viewControl addGestureRecognizer:self.revealViewController.tapGestureRecognizer];
+    
     NSString *path = [[NSBundle mainBundle] bundlePath];
     NSURL *baseURL = [NSURL fileURLWithPath:path];
     
@@ -186,5 +189,11 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//You should enable simultaneous gesture recognition
+//- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+//{
+//    return YES;
+//}
 
 @end

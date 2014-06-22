@@ -346,10 +346,11 @@
                                             <color key="textColor" red="0.32993368299999998" green="0.34324832529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <webView tag="102" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="haB-Hd-uzE">
+                                        <webView tag="102" contentMode="scaleToFill" fixedFrame="YES" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haB-Hd-uzE">
                                             <rect key="frame" x="8" y="4" width="144" height="80"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <dataDetectorType key="dataDetectorTypes"/>
                                         </webView>
                                     </subviews>
                                 </tableViewCellContentView>

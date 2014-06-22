@@ -142,6 +142,8 @@
     if (_category == MENU_ID_SERMON_VIDEO)
     {
         UIWebView *videoView = (UIWebView *)[cell viewWithTag:102];
+        videoView.scrollView.scrollEnabled = NO;
+        videoView.scrollView.bounces = NO;
         NSString *youtubeId = [self extractYoutubeID:data->_content];
         if (youtubeId != nil)
         {
