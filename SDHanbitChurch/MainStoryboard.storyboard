@@ -199,12 +199,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HFT-cv-T8U">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HFT-cv-T8U">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HFT-cv-T8U" firstAttribute="leading" secondItem="h8z-4y-wHe" secondAttribute="leading" id="O1T-3e-qnQ"/>
+                            <constraint firstItem="HFT-cv-T8U" firstAttribute="top" secondItem="h8z-4y-wHe" secondAttribute="top" id="YgE-ct-ctL"/>
+                            <constraint firstAttribute="trailing" secondItem="HFT-cv-T8U" secondAttribute="trailing" id="lm8-uQ-Ida"/>
+                            <constraint firstAttribute="bottom" secondItem="HFT-cv-T8U" secondAttribute="bottom" id="p1b-cL-wcd"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="swQ-cZ-iL2">
@@ -237,13 +243,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Gy-kV-zA9">
-                                <rect key="frame" x="0.0" y="-5" width="320" height="573"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Gy-kV-zA9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4Gy-kV-zA9" secondAttribute="trailing" id="MlZ-MJ-0ri"/>
+                            <constraint firstAttribute="bottom" secondItem="4Gy-kV-zA9" secondAttribute="bottom" id="WWL-PT-ZsP"/>
+                            <constraint firstItem="4Gy-kV-zA9" firstAttribute="top" secondItem="hld-pr-Web" secondAttribute="top" id="bf2-Ou-BiX"/>
+                            <constraint firstItem="4Gy-kV-zA9" firstAttribute="leading" secondItem="hld-pr-Web" secondAttribute="leading" id="yzW-Tx-In9"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="trR-JO-oM4">
@@ -271,12 +283,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bi-5T-zLG">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bi-5T-zLG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="524" id="UZh-NU-p9L"/>
+                                </constraints>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="niD-RQ-72w">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niD-RQ-72w">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
@@ -301,6 +316,14 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1bi-5T-zLG" firstAttribute="bottom" secondItem="niD-RQ-72w" secondAttribute="top" id="YEB-7G-WJQ"/>
+                            <constraint firstItem="1bi-5T-zLG" firstAttribute="leading" secondItem="Y7b-FA-bAQ" secondAttribute="leading" id="cEa-4F-7Jp"/>
+                            <constraint firstItem="1bi-5T-zLG" firstAttribute="trailing" secondItem="niD-RQ-72w" secondAttribute="trailing" id="kHo-lf-Hfm"/>
+                            <constraint firstItem="1bi-5T-zLG" firstAttribute="top" secondItem="Y7b-FA-bAQ" secondAttribute="top" id="r9k-X0-8Mq"/>
+                            <constraint firstItem="1bi-5T-zLG" firstAttribute="leading" secondItem="niD-RQ-72w" secondAttribute="leading" id="tDB-eu-JJ0"/>
+                            <constraint firstAttribute="trailing" secondItem="1bi-5T-zLG" secondAttribute="trailing" id="yZe-rx-eNj"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="hNT-eW-9qp">
@@ -430,13 +453,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView tag="100" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="webViewDetail" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-fb-RXy">
+                            <webView tag="100" contentMode="scaleToFill" restorationIdentifier="webViewDetail" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-fb-RXy">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vf1-fb-RXy" firstAttribute="leading" secondItem="t4h-dE-5dr" secondAttribute="leading" id="CaP-dX-Fda"/>
+                            <constraint firstAttribute="bottom" secondItem="vf1-fb-RXy" secondAttribute="bottom" id="g1j-dd-x2A"/>
+                            <constraint firstItem="vf1-fb-RXy" firstAttribute="top" secondItem="t4h-dE-5dr" secondAttribute="top" id="hqI-cN-lIj"/>
+                            <constraint firstAttribute="trailing" secondItem="vf1-fb-RXy" secondAttribute="trailing" id="niC-1D-a7L"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DXk-cg-ThY"/>
                     <connections>
@@ -469,7 +498,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUB-4X-AdO">
-                                <rect key="frame" x="0.0" y="233" width="106" height="167"/>
+                                <rect key="frame" x="107" y="233" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_ministry.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -480,7 +509,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gd-iy-Myt">
-                                <rect key="frame" x="107" y="233" width="106" height="167"/>
+                                <rect key="frame" x="214" y="401" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_words.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -503,7 +532,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="107" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYI-fE-83y">
-                                <rect key="frame" x="0.0" y="401" width="106" height="167"/>
+                                <rect key="frame" x="107" y="65" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_news.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -514,9 +543,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="108" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-vQ-Vjb">
-                                <rect key="frame" x="107" y="401" width="106" height="167"/>
+                                <rect key="frame" x="0.0" y="233" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="main_hopes.png">
+                                <state key="normal" backgroundImage="main_school.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -525,7 +554,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="109" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-N4-DSo">
-                                <rect key="frame" x="214" y="401" width="106" height="167"/>
+                                <rect key="frame" x="214" y="65" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_actions.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -536,7 +565,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-on-EED">
-                                <rect key="frame" x="107" y="65" width="106" height="167"/>
+                                <rect key="frame" x="0.0" y="401" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_sermon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -547,7 +576,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-AV-cRw">
-                                <rect key="frame" x="214" y="65" width="106" height="167"/>
+                                <rect key="frame" x="107" y="401" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_share.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -602,10 +631,10 @@
     <resources>
         <image name="hanbit_logo.png" width="306" height="124"/>
         <image name="main_actions.png" width="240" height="400"/>
-        <image name="main_hopes.png" width="512" height="512"/>
         <image name="main_ministry.png" width="240" height="400"/>
         <image name="main_news.png" width="240" height="400"/>
         <image name="main_recitation.png" width="240" height="400"/>
+        <image name="main_school.png" width="240" height="400"/>
         <image name="main_sdhanbit.png" width="240" height="400"/>
         <image name="main_sermon.png" width="240" height="400"/>
         <image name="main_share.png" width="240" height="400"/>
@@ -618,10 +647,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3Hf-n4-LwN"/>
-        <segue reference="pcX-5n-nCb"/>
-        <segue reference="sGP-Yj-1Hp"/>
         <segue reference="Ear-vN-ABf"/>
+        <segue reference="fGi-Ar-SKi"/>
+        <segue reference="LsH-Yu-v3u"/>
+        <segue reference="lIt-Pj-GzJ"/>
         <segue reference="lyX-NR-dL7"/>
     </inferredMetricsTieBreakers>
 </document>

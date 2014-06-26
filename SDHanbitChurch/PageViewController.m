@@ -177,9 +177,10 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
     }
     else if (_category == MENU_ID_CULTURE_SCHOOL) // 문화 학교
     {
-        NSURL *url = [NSURL URLWithString:@"http://www.sdhanbit.org/wordpress/wp-content/uploads/2013/09/"]; //2013년-가을-학기-한빛-문화-학교-강좌.jpg"];
+        NSURL *url = [NSURL URLWithString:@"http://www.sdhanbit.org/wordpress/wp-content/uploads/2014/01/HANBIT-_-SPRING-EDU-779x1024.jpg"];
         NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
         
+        _viewControl.scalesPageToFit = YES;
         [_viewControl loadRequest:requestObj];
     }
 }

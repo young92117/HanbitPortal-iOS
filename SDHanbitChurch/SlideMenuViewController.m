@@ -97,14 +97,14 @@ NSInteger slideMenuCategory[14] = { MENU_ID_NULL,
                             @"main_staff_icon.png",
                             @"main_map_icon.png",
                             @"main_worship_icon.png",
-                            @"main_sermon_icon",
-                            @"main_share_icon",
-                            @"main_recitation_icon",
-                            @"main_ministry_icon",
-                            @"main_words_icon",
-                            @"main_news_icon",
-                            @"main_actions_icon",
-                            @"email-open.png",];
+                            @"main_sermon_icon.png",
+                            @"main_share_icon.png",
+                            @"main_recitation_icon.png",
+                            @"main_ministry_icon.png",
+                            @"main_words_icon.png",
+                            @"main_news_icon.png",
+                            @"main_actions_icon.png",
+                            @"main_school_icon.png",];
 }
 
 - (void)didReceiveMemoryWarning
