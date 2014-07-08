@@ -105,7 +105,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E1002F9218C1D2180079F2D8 /* SDHanbitChurch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDHanbitChurch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1002F9218C1D2180079F2D8 /* Hanbit Church.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hanbit Church.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1002F9518C1D2180079F2D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1002F9718C1D2180079F2D8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E1002F9918C1D2180079F2D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -250,7 +250,7 @@
 		E1002F9318C1D2180079F2D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1002F9218C1D2180079F2D8 /* SDHanbitChurch.app */,
+				E1002F9218C1D2180079F2D8 /* Hanbit Church.app */,
 				E1002FAD18C1D2180079F2D8 /* SDHanbitChurchTests.xctest */,
 			);
 			name = Products;
@@ -415,9 +415,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1002F9118C1D2180079F2D8 /* SDHanbitChurch */ = {
+		E1002F9118C1D2180079F2D8 /* Hanbit Church */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1002FBE18C1D2180079F2D8 /* Build configuration list for PBXNativeTarget "SDHanbitChurch" */;
+			buildConfigurationList = E1002FBE18C1D2180079F2D8 /* Build configuration list for PBXNativeTarget "Hanbit Church" */;
 			buildPhases = (
 				E1002F8E18C1D2180079F2D8 /* Sources */,
 				E1002F8F18C1D2180079F2D8 /* Frameworks */,
@@ -427,9 +427,9 @@
 			);
 			dependencies = (
 			);
-			name = SDHanbitChurch;
+			name = "Hanbit Church";
 			productName = SDHanbitChurch;
-			productReference = E1002F9218C1D2180079F2D8 /* SDHanbitChurch.app */;
+			productReference = E1002F9218C1D2180079F2D8 /* Hanbit Church.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E1002FAC18C1D2180079F2D8 /* SDHanbitChurchTests */ = {
@@ -479,7 +479,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1002F9118C1D2180079F2D8 /* SDHanbitChurch */,
+				E1002F9118C1D2180079F2D8 /* Hanbit Church */,
 				E1002FAC18C1D2180079F2D8 /* SDHanbitChurchTests */,
 			);
 		};
@@ -599,7 +599,7 @@
 /* Begin PBXTargetDependency section */
 		E1002FB318C1D2180079F2D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1002F9118C1D2180079F2D8 /* SDHanbitChurch */;
+			target = E1002F9118C1D2180079F2D8 /* Hanbit Church */;
 			targetProxy = E1002FB218C1D2180079F2D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -776,7 +776,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1002FBE18C1D2180079F2D8 /* Build configuration list for PBXNativeTarget "SDHanbitChurch" */ = {
+		E1002FBE18C1D2180079F2D8 /* Build configuration list for PBXNativeTarget "Hanbit Church" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1002FBF18C1D2180079F2D8 /* Debug */,

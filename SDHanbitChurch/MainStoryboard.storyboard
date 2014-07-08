@@ -10,8 +10,8 @@
             <objects>
                 <viewController id="mxO-Ck-fW8" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pCQ-49-EeZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="egc-ak-haC"/>
+                        <viewControllerLayoutGuide type="top" id="3Vt-TP-Wts"/>
+                        <viewControllerLayoutGuide type="bottom" id="a9f-2q-F3p"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xgg-St-n5E">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -192,25 +192,19 @@
             <objects>
                 <viewController id="t3K-tV-MfW" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lBT-aI-J3I"/>
-                        <viewControllerLayoutGuide type="bottom" id="ceP-tR-xk4"/>
+                        <viewControllerLayoutGuide type="top" id="ERn-x9-hL4"/>
+                        <viewControllerLayoutGuide type="bottom" id="jGk-Nc-Rv1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h8z-4y-wHe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HFT-cv-T8U">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" tag="100" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HFT-cv-T8U">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="HFT-cv-T8U" firstAttribute="leading" secondItem="h8z-4y-wHe" secondAttribute="leading" id="O1T-3e-qnQ"/>
-                            <constraint firstItem="HFT-cv-T8U" firstAttribute="top" secondItem="h8z-4y-wHe" secondAttribute="top" id="YgE-ct-ctL"/>
-                            <constraint firstAttribute="trailing" secondItem="HFT-cv-T8U" secondAttribute="trailing" id="lm8-uQ-Ida"/>
-                            <constraint firstAttribute="bottom" secondItem="HFT-cv-T8U" secondAttribute="bottom" id="p1b-cL-wcd"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="swQ-cZ-iL2">
@@ -236,26 +230,20 @@
             <objects>
                 <viewController id="0vl-9q-eWR" customClass="PageViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="x1R-6D-jxh"/>
-                        <viewControllerLayoutGuide type="bottom" id="GGQ-6M-hVn"/>
+                        <viewControllerLayoutGuide type="top" id="Bvc-AQ-qoS"/>
+                        <viewControllerLayoutGuide type="bottom" id="EtZ-tF-dSJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hld-pr-Web">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Gy-kV-zA9">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Gy-kV-zA9">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="4Gy-kV-zA9" secondAttribute="trailing" id="MlZ-MJ-0ri"/>
-                            <constraint firstAttribute="bottom" secondItem="4Gy-kV-zA9" secondAttribute="bottom" id="WWL-PT-ZsP"/>
-                            <constraint firstItem="4Gy-kV-zA9" firstAttribute="top" secondItem="hld-pr-Web" secondAttribute="top" id="bf2-Ou-BiX"/>
-                            <constraint firstItem="4Gy-kV-zA9" firstAttribute="leading" secondItem="hld-pr-Web" secondAttribute="leading" id="yzW-Tx-In9"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="trR-JO-oM4">
@@ -276,22 +264,19 @@
             <objects>
                 <viewController id="tN0-XJ-yYm" customClass="BibleViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2iN-KU-aSu"/>
-                        <viewControllerLayoutGuide type="bottom" id="W9i-PB-WwS"/>
+                        <viewControllerLayoutGuide type="top" id="EDX-3j-gSC"/>
+                        <viewControllerLayoutGuide type="bottom" id="uN2-aV-00A"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Y7b-FA-bAQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bi-5T-zLG">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bi-5T-zLG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="524" id="UZh-NU-p9L"/>
-                                </constraints>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niD-RQ-72w">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="niD-RQ-72w">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
@@ -316,14 +301,6 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="bottom" secondItem="niD-RQ-72w" secondAttribute="top" id="YEB-7G-WJQ"/>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="leading" secondItem="Y7b-FA-bAQ" secondAttribute="leading" id="cEa-4F-7Jp"/>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="trailing" secondItem="niD-RQ-72w" secondAttribute="trailing" id="kHo-lf-Hfm"/>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="top" secondItem="Y7b-FA-bAQ" secondAttribute="top" id="r9k-X0-8Mq"/>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="leading" secondItem="niD-RQ-72w" secondAttribute="leading" id="tDB-eu-JJ0"/>
-                            <constraint firstAttribute="trailing" secondItem="1bi-5T-zLG" secondAttribute="trailing" id="yZe-rx-eNj"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="hNT-eW-9qp">
@@ -446,26 +423,20 @@
             <objects>
                 <viewController id="wQj-YV-tej" customClass="ItemViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Xsq-YD-wMN"/>
-                        <viewControllerLayoutGuide type="bottom" id="TTS-Wg-hFF"/>
+                        <viewControllerLayoutGuide type="top" id="Ztu-zU-d5N"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nyh-qo-g79"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="t4h-dE-5dr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView tag="100" contentMode="scaleToFill" restorationIdentifier="webViewDetail" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-fb-RXy">
+                            <webView tag="100" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="webViewDetail" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-fb-RXy">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="vf1-fb-RXy" firstAttribute="leading" secondItem="t4h-dE-5dr" secondAttribute="leading" id="CaP-dX-Fda"/>
-                            <constraint firstAttribute="bottom" secondItem="vf1-fb-RXy" secondAttribute="bottom" id="g1j-dd-x2A"/>
-                            <constraint firstItem="vf1-fb-RXy" firstAttribute="top" secondItem="t4h-dE-5dr" secondAttribute="top" id="hqI-cN-lIj"/>
-                            <constraint firstAttribute="trailing" secondItem="vf1-fb-RXy" secondAttribute="trailing" id="niC-1D-a7L"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DXk-cg-ThY"/>
                     <connections>
@@ -481,27 +452,23 @@
             <objects>
                 <viewController title="MainPage" id="1SV-vQ-cnS" customClass="MainPageViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="I6i-e4-djL"/>
-                        <viewControllerLayoutGuide type="bottom" id="ofX-Cp-Wg5"/>
+                        <viewControllerLayoutGuide type="top" id="xlb-Ej-Fxx"/>
+                        <viewControllerLayoutGuide type="bottom" id="MBm-Dh-lIH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="h8N-fw-e28">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zG-9h-fN4">
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zG-9h-fN4">
                                 <rect key="frame" x="0.0" y="65" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="167" id="e9Z-l6-atc"/>
-                                    <constraint firstAttribute="width" constant="106" id="vxY-Kb-9mx"/>
-                                </constraints>
                                 <state key="normal" backgroundImage="main_sdhanbit.png"/>
                                 <connections>
                                     <action selector="mainButton01:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="Cas-8T-OiE"/>
                                     <segue destination="0vl-9q-eWR" kind="push" identifier="showIntro" id="lIt-Pj-GzJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUB-4X-AdO">
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUB-4X-AdO">
                                 <rect key="frame" x="107" y="233" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_ministry.png">
@@ -512,7 +479,7 @@
                                     <segue destination="bac-Yl-0f7" kind="push" identifier="showColumn" customClass="SWRevealViewControllerSegue" id="ISm-4N-lbz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gd-iy-Myt">
+                            <button opaque="NO" tag="109" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gd-iy-Myt">
                                 <rect key="frame" x="214" y="401" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_words.png">
@@ -524,7 +491,7 @@
                                     <segue destination="bac-Yl-0f7" kind="push" identifier="showSeed" customClass="SWRevealViewControllerSegue" id="SA1-4H-wnT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIw-xL-8Vd">
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIw-xL-8Vd">
                                 <rect key="frame" x="214" y="233" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_recitation.png">
@@ -535,7 +502,7 @@
                                     <segue destination="tN0-XJ-yYm" kind="push" identifier="showBible" id="LsH-Yu-v3u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYI-fE-83y">
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYI-fE-83y">
                                 <rect key="frame" x="107" y="65" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_news.png">
@@ -546,12 +513,9 @@
                                     <segue destination="bac-Yl-0f7" kind="push" identifier="showNews" customClass="SWRevealViewControllerSegue" id="Z48-pI-mNA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-vQ-Vjb">
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-vQ-Vjb">
                                 <rect key="frame" x="0.0" y="233" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="167" id="QgH-a7-hTe"/>
-                                </constraints>
                                 <state key="normal" backgroundImage="main_school.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -560,7 +524,7 @@
                                     <segue destination="0vl-9q-eWR" kind="push" identifier="showCulture" id="2ps-gY-aRy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-N4-DSo">
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-N4-DSo">
                                 <rect key="frame" x="214" y="65" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_actions.png">
@@ -571,7 +535,7 @@
                                     <segue destination="0vl-9q-eWR" kind="push" identifier="showAssign" id="Jzn-iq-aRK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-on-EED">
+                            <button opaque="NO" tag="107" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-on-EED">
                                 <rect key="frame" x="0.0" y="401" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_sermon.png">
@@ -582,7 +546,7 @@
                                     <segue destination="bac-Yl-0f7" kind="push" identifier="showSermon" customClass="SWRevealViewControllerSegue" id="fGi-Ar-SKi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-AV-cRw">
+                            <button opaque="NO" tag="108" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-AV-cRw">
                                 <rect key="frame" x="107" y="401" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_share.png">
@@ -596,50 +560,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0yb-on-EED" firstAttribute="top" secondItem="mzM-vQ-Vjb" secondAttribute="bottom" constant="1" id="1FC-oG-Evd"/>
-                            <constraint firstItem="jIw-xL-8Vd" firstAttribute="trailing" secondItem="9Gd-iy-Myt" secondAttribute="trailing" id="1mP-Wk-n8I"/>
-                            <constraint firstItem="4zG-9h-fN4" firstAttribute="top" secondItem="YYI-fE-83y" secondAttribute="top" id="1pw-Zm-Hdr"/>
-                            <constraint firstItem="bWQ-AV-cRw" firstAttribute="baseline" secondItem="0yb-on-EED" secondAttribute="baseline" id="37D-gc-qUs"/>
-                            <constraint firstItem="CIG-N4-DSo" firstAttribute="trailing" secondItem="jIw-xL-8Vd" secondAttribute="trailing" id="4E6-fv-vIE"/>
-                            <constraint firstItem="YYI-fE-83y" firstAttribute="top" secondItem="CIG-N4-DSo" secondAttribute="top" id="4ab-Ng-a7R"/>
-                            <constraint firstItem="CIG-N4-DSo" firstAttribute="leading" secondItem="YYI-fE-83y" secondAttribute="trailing" constant="1" id="5Ly-Kn-3P7"/>
-                            <constraint firstItem="RUB-4X-AdO" firstAttribute="leading" secondItem="bWQ-AV-cRw" secondAttribute="leading" id="DG9-w6-Erx"/>
-                            <constraint firstItem="4zG-9h-fN4" firstAttribute="top" secondItem="I6i-e4-djL" secondAttribute="bottom" constant="1" id="G35-dw-kDm"/>
-                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="trailing" secondItem="4zG-9h-fN4" secondAttribute="trailing" id="HHd-WG-Psa"/>
-                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="bottom" secondItem="RUB-4X-AdO" secondAttribute="bottom" id="HS5-Qe-8D6"/>
-                            <constraint firstItem="jIw-xL-8Vd" firstAttribute="top" secondItem="RUB-4X-AdO" secondAttribute="top" id="HlI-2V-xpA"/>
-                            <constraint firstItem="RUB-4X-AdO" firstAttribute="bottom" secondItem="jIw-xL-8Vd" secondAttribute="bottom" id="KPa-uq-nMA"/>
-                            <constraint firstItem="YYI-fE-83y" firstAttribute="centerX" secondItem="h8N-fw-e28" secondAttribute="centerX" id="MzA-4w-bFx"/>
-                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="top" secondItem="4zG-9h-fN4" secondAttribute="bottom" constant="1" id="NJT-1f-XdN"/>
-                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="baseline" secondItem="RUB-4X-AdO" secondAttribute="baseline" id="Nbm-fr-eoR"/>
-                            <constraint firstItem="RUB-4X-AdO" firstAttribute="leading" secondItem="YYI-fE-83y" secondAttribute="leading" id="PgA-67-LHs"/>
-                            <constraint firstItem="RUB-4X-AdO" firstAttribute="baseline" secondItem="jIw-xL-8Vd" secondAttribute="baseline" id="ROh-gR-Mbn"/>
-                            <constraint firstAttribute="trailing" secondItem="9Gd-iy-Myt" secondAttribute="trailing" id="UaF-t2-O8S"/>
-                            <constraint firstItem="4zG-9h-fN4" firstAttribute="bottom" secondItem="YYI-fE-83y" secondAttribute="bottom" id="Vvk-Ae-F2w"/>
-                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="leading" secondItem="4zG-9h-fN4" secondAttribute="leading" id="WNQ-en-imK"/>
-                            <constraint firstItem="4zG-9h-fN4" firstAttribute="baseline" secondItem="YYI-fE-83y" secondAttribute="baseline" id="Y7h-Ze-65Y"/>
-                            <constraint firstItem="RUB-4X-AdO" firstAttribute="trailing" secondItem="YYI-fE-83y" secondAttribute="trailing" id="ah7-Ua-QgC"/>
-                            <constraint firstItem="0yb-on-EED" firstAttribute="top" secondItem="bWQ-AV-cRw" secondAttribute="top" id="amU-PS-U1K"/>
-                            <constraint firstItem="YYI-fE-83y" firstAttribute="leading" secondItem="4zG-9h-fN4" secondAttribute="trailing" constant="1" id="atd-gz-qd4"/>
-                            <constraint firstAttribute="bottom" secondItem="0yb-on-EED" secondAttribute="bottom" id="ax7-zY-RQV"/>
-                            <constraint firstItem="0yb-on-EED" firstAttribute="baseline" secondItem="9Gd-iy-Myt" secondAttribute="baseline" id="bED-2F-YF2"/>
-                            <constraint firstItem="9Gd-iy-Myt" firstAttribute="leading" secondItem="jIw-xL-8Vd" secondAttribute="leading" id="cRH-bU-igo"/>
-                            <constraint firstItem="4zG-9h-fN4" firstAttribute="baseline" secondItem="CIG-N4-DSo" secondAttribute="baseline" id="cg3-RI-1kz"/>
-                            <constraint firstItem="RUB-4X-AdO" firstAttribute="trailing" secondItem="bWQ-AV-cRw" secondAttribute="trailing" id="d6a-VG-NTW"/>
-                            <constraint firstItem="9Gd-iy-Myt" firstAttribute="baseline" secondItem="bWQ-AV-cRw" secondAttribute="baseline" id="f3r-Ig-e9P"/>
-                            <constraint firstItem="9Gd-iy-Myt" firstAttribute="top" secondItem="bWQ-AV-cRw" secondAttribute="top" id="gk5-y5-uZP"/>
-                            <constraint firstItem="0yb-on-EED" firstAttribute="trailing" secondItem="mzM-vQ-Vjb" secondAttribute="trailing" id="i3g-nS-oOj"/>
-                            <constraint firstItem="jIw-xL-8Vd" firstAttribute="leading" secondItem="CIG-N4-DSo" secondAttribute="leading" id="k1Q-1j-waR"/>
-                            <constraint firstItem="YYI-fE-83y" firstAttribute="bottom" secondItem="CIG-N4-DSo" secondAttribute="bottom" id="mGe-ek-yoz"/>
-                            <constraint firstItem="9Gd-iy-Myt" firstAttribute="bottom" secondItem="bWQ-AV-cRw" secondAttribute="bottom" id="nGQ-V3-ZrM"/>
-                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="leading" secondItem="0yb-on-EED" secondAttribute="leading" id="r18-Xo-6mT"/>
-                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="baseline" secondItem="jIw-xL-8Vd" secondAttribute="baseline" id="rcQ-RV-dhi"/>
-                            <constraint firstItem="RUB-4X-AdO" firstAttribute="top" secondItem="mzM-vQ-Vjb" secondAttribute="top" id="rsd-Bg-NbI"/>
-                            <constraint firstItem="4zG-9h-fN4" firstAttribute="leading" secondItem="h8N-fw-e28" secondAttribute="leading" id="toD-U9-qvG"/>
-                            <constraint firstItem="bWQ-AV-cRw" firstAttribute="bottom" secondItem="0yb-on-EED" secondAttribute="bottom" id="uFR-gb-lvF"/>
-                            <constraint firstItem="YYI-fE-83y" firstAttribute="baseline" secondItem="CIG-N4-DSo" secondAttribute="baseline" id="zT1-kk-yd6"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Quf-hg-sm9">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="0uT-tP-zMJ"/>
@@ -698,10 +618,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Ear-vN-ABf"/>
-        <segue reference="fGi-Ar-SKi"/>
-        <segue reference="LsH-Yu-v3u"/>
         <segue reference="lIt-Pj-GzJ"/>
+        <segue reference="Ear-vN-ABf"/>
+        <segue reference="LsH-Yu-v3u"/>
+        <segue reference="Z48-pI-mNA"/>
         <segue reference="lyX-NR-dL7"/>
     </inferredMetricsTieBreakers>
 </document>
