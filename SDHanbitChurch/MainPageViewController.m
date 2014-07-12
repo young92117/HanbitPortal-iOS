@@ -139,9 +139,6 @@ NSInteger tableCategory[5] = {MENU_ID_SERMON_COLUMN,
     _manager.communicator.delegate = _manager;
     _manager.delegate = self;
     
-    // button size
-    //UIButton *button1 = (UIButton *)[self.view viewWithTag:101];
-    
     // get the current date and time info
     NSDateFormatter *format = [[NSDateFormatter alloc] init];
     [format setDateFormat:@"yyyyMMddHHmm"];
