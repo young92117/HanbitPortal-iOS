@@ -110,6 +110,10 @@ NSString *backBibleImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg"
     
     if (_category == MENU_ID_BIBLE_AMSONG) // 성경 암송
     {
+        // button size
+        UIWebView *webview = (UIWebView *)[self.view viewWithTag:100];
+        webview.frame = CGRectMake(0, 0, 100, 200);
+        
         [self displayBibleVerse];
     }
 }

@@ -283,13 +283,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bi-5T-zLG">
+                            <webView tag="100" contentMode="scaleToFill" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bi-5T-zLG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="524" id="qt3-OY-XVk"/>
-                                </constraints>
+                                <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niD-RQ-72w">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
@@ -317,12 +315,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="leading" secondItem="niD-RQ-72w" secondAttribute="leading" id="Bp6-R9-UMh"/>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="leading" secondItem="Y7b-FA-bAQ" secondAttribute="leading" id="D6J-EK-1kZ"/>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="top" secondItem="Y7b-FA-bAQ" secondAttribute="top" id="Xcw-Bs-RQd"/>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="trailing" secondItem="niD-RQ-72w" secondAttribute="trailing" id="axX-Ra-rFl"/>
-                            <constraint firstItem="1bi-5T-zLG" firstAttribute="bottom" secondItem="niD-RQ-72w" secondAttribute="top" id="kjn-d9-Ush"/>
-                            <constraint firstAttribute="trailing" secondItem="1bi-5T-zLG" secondAttribute="trailing" id="r0p-ON-cn1"/>
+                            <constraint firstItem="niD-RQ-72w" firstAttribute="leading" secondItem="Y7b-FA-bAQ" secondAttribute="leading" id="4BP-ln-4ex"/>
+                            <constraint firstItem="1bi-5T-zLG" firstAttribute="top" secondItem="Y7b-FA-bAQ" secondAttribute="top" id="6cH-vr-94E"/>
+                            <constraint firstAttribute="bottom" secondItem="niD-RQ-72w" secondAttribute="bottom" id="8Ql-3I-dkB"/>
+                            <constraint firstItem="1bi-5T-zLG" firstAttribute="trailing" secondItem="niD-RQ-72w" secondAttribute="trailing" id="9uJ-PP-ASX"/>
+                            <constraint firstAttribute="trailing" secondItem="1bi-5T-zLG" secondAttribute="trailing" id="BGe-lH-wQl"/>
+                            <constraint firstItem="1bi-5T-zLG" firstAttribute="leading" secondItem="niD-RQ-72w" secondAttribute="leading" id="ll8-Cc-aD5"/>
+                            <constraint firstItem="niD-RQ-72w" firstAttribute="top" secondItem="1bi-5T-zLG" secondAttribute="bottom" id="stu-W0-HUo"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -488,7 +487,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zG-9h-fN4">
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zG-9h-fN4">
                                 <rect key="frame" x="0.0" y="65" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_sdhanbit.png"/>
@@ -497,41 +496,7 @@
                                     <segue destination="0vl-9q-eWR" kind="push" identifier="showIntro" id="lIt-Pj-GzJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUB-4X-AdO">
-                                <rect key="frame" x="107" y="233" width="106" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="main_ministry.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="mainButton04:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="J6Y-0b-mmN"/>
-                                    <segue destination="bac-Yl-0f7" kind="push" identifier="showColumn" customClass="SWRevealViewControllerSegue" id="ISm-4N-lbz"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="109" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gd-iy-Myt">
-                                <rect key="frame" x="214" y="401" width="106" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="main_words.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="mainButton05:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="m67-PF-uHp"/>
-                                    <segue destination="bac-Yl-0f7" kind="push" identifier="showSeed" customClass="SWRevealViewControllerSegue" id="SA1-4H-wnT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="106" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIw-xL-8Vd">
-                                <rect key="frame" x="214" y="233" width="106" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="main_recitation.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="mainButton06:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="xOF-eg-x6W"/>
-                                    <segue destination="tN0-XJ-yYm" kind="push" identifier="showBible" id="LsH-Yu-v3u"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYI-fE-83y">
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYI-fE-83y">
                                 <rect key="frame" x="107" y="65" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_news.png">
@@ -542,18 +507,7 @@
                                     <segue destination="bac-Yl-0f7" kind="push" identifier="showNews" customClass="SWRevealViewControllerSegue" id="Z48-pI-mNA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-vQ-Vjb">
-                                <rect key="frame" x="0.0" y="233" width="106" height="167"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="main_school.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="mainButton08:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="czO-xY-G6S"/>
-                                    <segue destination="0vl-9q-eWR" kind="push" identifier="showCulture" id="2ps-gY-aRy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-N4-DSo">
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-N4-DSo">
                                 <rect key="frame" x="214" y="65" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_actions.png">
@@ -564,7 +518,40 @@
                                     <segue destination="0vl-9q-eWR" kind="push" identifier="showAssign" id="Jzn-iq-aRK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="107" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-on-EED">
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-vQ-Vjb">
+                                <rect key="frame" x="0.0" y="233" width="106" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="main_school.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainButton08:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="czO-xY-G6S"/>
+                                    <segue destination="0vl-9q-eWR" kind="push" identifier="showCulture" id="2ps-gY-aRy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RUB-4X-AdO">
+                                <rect key="frame" x="107" y="233" width="106" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="main_ministry.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainButton04:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="J6Y-0b-mmN"/>
+                                    <segue destination="bac-Yl-0f7" kind="push" identifier="showColumn" customClass="SWRevealViewControllerSegue" id="ISm-4N-lbz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIw-xL-8Vd">
+                                <rect key="frame" x="214" y="233" width="106" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="main_recitation.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainButton06:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="xOF-eg-x6W"/>
+                                    <segue destination="tN0-XJ-yYm" kind="push" identifier="showBible" id="LsH-Yu-v3u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-on-EED">
                                 <rect key="frame" x="0.0" y="401" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_sermon.png">
@@ -575,7 +562,7 @@
                                     <segue destination="bac-Yl-0f7" kind="push" identifier="showSermon" customClass="SWRevealViewControllerSegue" id="fGi-Ar-SKi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="108" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-AV-cRw">
+                            <button opaque="NO" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-AV-cRw">
                                 <rect key="frame" x="107" y="401" width="106" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="main_share.png">
@@ -587,8 +574,67 @@
                                     <segue destination="bac-Yl-0f7" kind="push" identifier="showShare" customClass="SWRevealViewControllerSegue" id="3qt-4z-8z6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gd-iy-Myt">
+                                <rect key="frame" x="214" y="401" width="106" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="main_words.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainButton05:" destination="1SV-vQ-cnS" eventType="touchUpInside" id="m67-PF-uHp"/>
+                                    <segue destination="bac-Yl-0f7" kind="push" identifier="showSeed" customClass="SWRevealViewControllerSegue" id="SA1-4H-wnT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0yb-on-EED" firstAttribute="top" secondItem="mzM-vQ-Vjb" secondAttribute="bottom" constant="1" id="2Og-uz-zhQ"/>
+                            <constraint firstItem="9Gd-iy-Myt" firstAttribute="top" secondItem="bWQ-AV-cRw" secondAttribute="top" id="3yC-3V-Xid"/>
+                            <constraint firstItem="0yb-on-EED" firstAttribute="trailing" secondItem="mzM-vQ-Vjb" secondAttribute="trailing" id="46F-47-lCr"/>
+                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="leading" secondItem="4zG-9h-fN4" secondAttribute="leading" id="65c-Te-zXG"/>
+                            <constraint firstItem="bWQ-AV-cRw" firstAttribute="top" secondItem="0yb-on-EED" secondAttribute="top" id="67d-XQ-bzQ"/>
+                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="baseline" secondItem="RUB-4X-AdO" secondAttribute="baseline" id="6TR-tj-YCp"/>
+                            <constraint firstItem="YYI-fE-83y" firstAttribute="top" secondItem="4zG-9h-fN4" secondAttribute="top" id="7Sg-vN-cdv"/>
+                            <constraint firstItem="YYI-fE-83y" firstAttribute="leading" secondItem="4zG-9h-fN4" secondAttribute="trailing" constant="1" id="9hW-jR-1UM"/>
+                            <constraint firstItem="bWQ-AV-cRw" firstAttribute="bottom" secondItem="0yb-on-EED" secondAttribute="bottom" id="BBI-eD-SpL"/>
+                            <constraint firstItem="RUB-4X-AdO" firstAttribute="top" secondItem="jIw-xL-8Vd" secondAttribute="top" id="BtJ-Tp-WjT"/>
+                            <constraint firstItem="0yb-on-EED" firstAttribute="baseline" secondItem="bWQ-AV-cRw" secondAttribute="baseline" id="CrB-yY-A57"/>
+                            <constraint firstItem="YYI-fE-83y" firstAttribute="bottom" secondItem="CIG-N4-DSo" secondAttribute="bottom" id="DKg-rr-ENZ"/>
+                            <constraint firstItem="RUB-4X-AdO" firstAttribute="trailing" secondItem="YYI-fE-83y" secondAttribute="trailing" id="G56-y7-0p3"/>
+                            <constraint firstItem="0yb-on-EED" firstAttribute="leading" secondItem="mzM-vQ-Vjb" secondAttribute="leading" id="H6s-a9-DtE"/>
+                            <constraint firstItem="4zG-9h-fN4" firstAttribute="width" secondItem="YYI-fE-83y" secondAttribute="width" id="IxM-vx-akn"/>
+                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="top" secondItem="4zG-9h-fN4" secondAttribute="bottom" constant="1" id="JQo-Mu-V3d"/>
+                            <constraint firstItem="YYI-fE-83y" firstAttribute="baseline" secondItem="CIG-N4-DSo" secondAttribute="baseline" id="K4k-wI-Yql"/>
+                            <constraint firstItem="0yb-on-EED" firstAttribute="baseline" secondItem="9Gd-iy-Myt" secondAttribute="baseline" id="KuH-aK-0vQ"/>
+                            <constraint firstItem="RUB-4X-AdO" firstAttribute="leading" secondItem="YYI-fE-83y" secondAttribute="leading" id="LFk-JE-Cqa"/>
+                            <constraint firstItem="bWQ-AV-cRw" firstAttribute="leading" secondItem="RUB-4X-AdO" secondAttribute="leading" id="OUT-Cq-1tc"/>
+                            <constraint firstItem="4zG-9h-fN4" firstAttribute="bottom" secondItem="YYI-fE-83y" secondAttribute="bottom" id="PNy-U7-evj"/>
+                            <constraint firstItem="jIw-xL-8Vd" firstAttribute="baseline" secondItem="RUB-4X-AdO" secondAttribute="baseline" id="Q9i-nx-gnk"/>
+                            <constraint firstItem="4zG-9h-fN4" firstAttribute="height" secondItem="mzM-vQ-Vjb" secondAttribute="height" id="XXw-e4-Ldo"/>
+                            <constraint firstItem="RUB-4X-AdO" firstAttribute="top" secondItem="mzM-vQ-Vjb" secondAttribute="top" id="XYx-Zy-tMQ"/>
+                            <constraint firstItem="RUB-4X-AdO" firstAttribute="centerX" secondItem="h8N-fw-e28" secondAttribute="centerX" id="Xya-3h-Lqs"/>
+                            <constraint firstItem="YYI-fE-83y" firstAttribute="baseline" secondItem="4zG-9h-fN4" secondAttribute="baseline" id="YdN-D1-cqm"/>
+                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="leading" secondItem="h8N-fw-e28" secondAttribute="leading" id="Z0D-kY-WvF"/>
+                            <constraint firstAttribute="bottom" secondItem="0yb-on-EED" secondAttribute="bottom" id="Zag-xv-1Yr"/>
+                            <constraint firstItem="9Gd-iy-Myt" firstAttribute="trailing" secondItem="jIw-xL-8Vd" secondAttribute="trailing" id="akP-lO-MlL"/>
+                            <constraint firstItem="bWQ-AV-cRw" firstAttribute="bottom" secondItem="9Gd-iy-Myt" secondAttribute="bottom" id="cCg-3C-Dxb"/>
+                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="trailing" secondItem="4zG-9h-fN4" secondAttribute="trailing" id="cL6-Ts-SjU"/>
+                            <constraint firstItem="4zG-9h-fN4" firstAttribute="height" secondItem="0yb-on-EED" secondAttribute="height" id="dMD-Ba-joc"/>
+                            <constraint firstItem="bWQ-AV-cRw" firstAttribute="baseline" secondItem="9Gd-iy-Myt" secondAttribute="baseline" id="gUe-bR-76q"/>
+                            <constraint firstItem="jIw-xL-8Vd" firstAttribute="baseline" secondItem="mzM-vQ-Vjb" secondAttribute="baseline" id="hBS-QV-AQh"/>
+                            <constraint firstItem="4zG-9h-fN4" firstAttribute="width" secondItem="CIG-N4-DSo" secondAttribute="width" id="hF6-eD-XLZ"/>
+                            <constraint firstAttribute="trailing" secondItem="jIw-xL-8Vd" secondAttribute="trailing" id="hMN-fq-UxI"/>
+                            <constraint firstItem="CIG-N4-DSo" firstAttribute="leading" secondItem="jIw-xL-8Vd" secondAttribute="leading" id="jBk-Ys-agx"/>
+                            <constraint firstItem="RUB-4X-AdO" firstAttribute="bottom" secondItem="jIw-xL-8Vd" secondAttribute="bottom" id="pJV-Yc-R6o"/>
+                            <constraint firstItem="CIG-N4-DSo" firstAttribute="trailing" secondItem="jIw-xL-8Vd" secondAttribute="trailing" id="rY4-UO-1Fh"/>
+                            <constraint firstItem="CIG-N4-DSo" firstAttribute="baseline" secondItem="4zG-9h-fN4" secondAttribute="baseline" id="sxE-PK-Taq"/>
+                            <constraint firstItem="RUB-4X-AdO" firstAttribute="trailing" secondItem="bWQ-AV-cRw" secondAttribute="trailing" id="tyc-pI-kWL"/>
+                            <constraint firstItem="jIw-xL-8Vd" firstAttribute="leading" secondItem="9Gd-iy-Myt" secondAttribute="leading" id="u0N-6f-re2"/>
+                            <constraint firstItem="4zG-9h-fN4" firstAttribute="top" secondItem="xlb-Ej-Fxx" secondAttribute="bottom" constant="1" id="v0f-Gb-OoH"/>
+                            <constraint firstItem="YYI-fE-83y" firstAttribute="top" secondItem="CIG-N4-DSo" secondAttribute="top" id="wg0-uG-o3e"/>
+                            <constraint firstItem="mzM-vQ-Vjb" firstAttribute="bottom" secondItem="RUB-4X-AdO" secondAttribute="bottom" id="zEv-9E-X7v"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Quf-hg-sm9">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="0uT-tP-zMJ"/>
@@ -647,8 +693,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lIt-Pj-GzJ"/>
         <segue reference="Ear-vN-ABf"/>
+        <segue reference="lIt-Pj-GzJ"/>
         <segue reference="LsH-Yu-v3u"/>
         <segue reference="Z48-pI-mNA"/>
         <segue reference="lyX-NR-dL7"/>
