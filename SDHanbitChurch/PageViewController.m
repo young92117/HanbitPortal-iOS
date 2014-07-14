@@ -85,15 +85,12 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
         _viewControl.scalesPageToFit = YES;
         [_viewControl loadHTMLString:html baseURL:nil];
     }
-    else if (_category == MENU_ID_MAINPASTOR) // 담임목사 소개
+    else if (_category == MENU_ID_MAINPASTOR) // 인사말
     {
+        NSLog(@"width=%f", self.view.frame.size.width);
         NSString *html = [NSString stringWithFormat:
-                          @"<html><body bgcolor=#E4E4E4 style=\"font-family:arial;color:black;font-size:15px;margin:10px\"> \
-                          <h3>정수일 목사</h3> \
-                          <blockquote><img src=\"Hanbit_PastorMain_400x600.jpg\" height=\"60%%\"><br><br> \
-                          담임목사<br>가족: 정경자, 다연, 윤홍<br> \
-                          <a href=\"scheong2@hotmail.com\">scheong2@hotmail.com</a></blockquote> \
-                          </body></html>"];
+                          @"<html><body style=\"margin:0\"><img src=hanbit_greeting.png width=\"%d\"></body></html>",
+                          (int)self.view.frame.size.width];
     
         [_viewControl loadHTMLString:html baseURL:baseURL];
     }
@@ -108,9 +105,18 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
     else if (_category == MENU_ID_WORSHIP_INFO) // 예배 안내
     {
         NSString *html = [NSString stringWithFormat:
-                          @"<html><body background=\"%@\"> \
-                          <p><strong>주일 예배 시간</strong></p> \
-                          <table border=1 frame=hsides rules=rows cellpadding=4 style=\"font-family:arial;color:black;font-size:12px;\"> \
+                          @"<html><head> \
+                          <style type=\"text/css\"> \
+                          body { \
+                          background: url('%@'); \
+                          background-repeat: no-repeat; \
+                          background-size: cover; \
+                          font-family: \"AppleSDGothicNeo-Light\"; \
+                          margin: 10px; } \
+                          </style></head> \
+                          <body> \
+                          <p style=\"color:#642EFE;font-size:20px\">주일 예배 시간</p> \
+                          <table border=1 frame=hsides rules=rows cellpadding=4 style=\"color:black;font-size:12px;\"> \
                           <tr><td valign=top width=140>성인부 예배</td> \
                           <td>1부 오전 7시30분<br>2부 오전 9시 (동시통역)<br>3부 오전 11시 (동시통역)<br>4부 오후 1시15분 (동시통역) 청년, 대학부<br></tr> \
                           <tr><td valign=top width=140>영아부 예배 &#8211; 1세 이하</td><td>오전 9시<br>오전 11시</td></tr> \
@@ -122,8 +128,8 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
                           <tr><td valign=top width=140>고등부 예배</td><td>오전 9시</td></tr> \
                           <tr><td valign=top width=140>천사부 예배</td><td>오전 9시</td></tr> \
                           </table> \
-                          <p><strong>기타 모임 시간</strong></p> \
-                          <table border=1 frame=hsides rules=rows cellpadding=4 style=\"font-family:arial;color:black;font-size:12px;\"> \
+                          <p style=\"color:#642EFE;font-size:20px\">기타 모임 시간</p> \
+                          <table border=1 frame=hsides rules=rows cellpadding=4 style=\"color:black;font-size:12px;\"> \
                           <tr><td width=80>목장 모임</td><td>(금) 오후 7시</td></tr> \
                           <tr><td width=80>대학부 모임</td><td>(금) 오후 6시</td></tr> \
                           <tr><td width=80>청년부 모임</td><td>(금) 오후 7시30분, (주) 오후 3시30분</td></tr> \

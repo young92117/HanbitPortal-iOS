@@ -71,7 +71,7 @@ NSInteger slideMenuCategory[14] = { MENU_ID_NULL,
     
     self.menuItems = @[@"Hanbit Church",
                        @"교회 소개",
-                       @"담임목사 소개",
+                       @"인사말",
                        @"섬기는 이들",
                        @"오시는 길",
                        @"예배 안내",

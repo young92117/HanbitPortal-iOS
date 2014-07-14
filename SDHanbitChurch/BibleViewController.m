@@ -74,8 +74,18 @@ NSString *backBibleImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg"
 
     // this week's bible verse
     NSString *html = [NSString stringWithFormat:
-                      @"<html><body background=\"%@\" style=\"margin:15px\"><P><big>%@</big></P>%@<br><br> \
-                      <P><big>%@</big></P>%@<br></body></html>",
+                      @"<html><head> \
+                      <style type=\"text/css\"> \
+                      body { \
+                      background: url('%@'); \
+                      background-repeat: no-repeat; \
+                      background-size: cover; \
+                      font-family: \"AppleSDGothicNeo-Light\"; \
+                      font-size: 18px; \
+                      margin: 20px; } \
+                      </style></head> \
+                      <body><P style=\"color:#642EFE\"><big>%@</big></P>%@<br><br> \
+                      <P style=\"color:#642EFE\"><big>%@</big></P>%@<br></body></html>",
                       backBibleImageList[bibleIndex],
                       korTitleString[thisWeekCh][thisWeekVerse], korText,
                       engTitleString[thisWeekCh][thisWeekVerse], engText];

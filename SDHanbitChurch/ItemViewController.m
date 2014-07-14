@@ -37,7 +37,16 @@
         DBManager *data = [listOfItems objectAtIndex:0];
     
         NSString *htmlString = [NSString stringWithFormat:
-                                @"<p><font size=\"4\" style=\"color:#8258FA\">%@</font></p>%@<br>",
+                                @"<html> \
+                                <style type=\"text/css\"> \
+                                body { \
+                                font-family: \"AppleSDGothicNeo-Light\"; \
+                                font-size: 15px \
+                                margin: 10px; } \
+                                </style></head> \
+                                <body> \
+                                <p style=\"color:#8258FA;font-size:20px\">%@</p>%@<br> \
+                                </body></html>",
                                 data->_title, data->_content];
         htmlString = [htmlString stringByReplacingOccurrencesOfString:@"\n" withString:@"<br>"];
         [_viewItem loadHTMLString:htmlString baseURL:nil];
