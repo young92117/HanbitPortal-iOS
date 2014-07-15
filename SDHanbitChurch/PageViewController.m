@@ -118,7 +118,8 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
                           <tr><td width=80>새벽 기도회</td><td>(화)-(금) 오전 5시30분, (토) 오전 6시</td></tr> \
                           <tr><td width=80>수요 기도회</td><td>(수) 오후 8시</td></tr> \
                           <tr><td width=80>시니어부</td><td>(주) 2부 예배후</td></tr> \
-                          </table></body></html>",
+                          </table> \
+                          <br><br><br></body></html>",
                           backImageList[2] ];
         
         [_viewControl loadHTMLString:html baseURL:baseURL];
