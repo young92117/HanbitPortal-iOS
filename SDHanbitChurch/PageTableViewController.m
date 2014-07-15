@@ -82,6 +82,8 @@
 {
     if (_category == MENU_ID_SERMON_VIDEO)
         return 88;
+    else if(_category == MENU_ID_BIBLE_SEED)
+        return 62;
     else
         return 48;
 }
@@ -121,6 +123,7 @@
     DBManager *data = [listOfItems objectAtIndex:0];
     
     UILabel *tableLabelTitle = (UILabel *)[cell viewWithTag:100];
+    [tableLabelTitle setFont:[UIFont fontWithName:@"AppleSDGothicNeo-Light" size:16]];
     tableLabelTitle.text = data->_title;
 
     if (_category == MENU_ID_SERMON_VIDEO || _category == MENU_ID_BIBLE_SEED)
@@ -132,11 +135,16 @@
         NSInteger thisWeekDay = [[calender components: NSWeekdayCalendarUnit fromDate:pubDate] weekday];
         
         NSRange strYearRange = {0,4}, strMonthRange = {4,2}, strDayRange = {6,2};
+        UInt32 day = [data->_pubdate substringWithRange:strDayRange].intValue;
+        if (_category == MENU_ID_SERMON_VIDEO)
+            day = day - thisWeekDay + 1;
+        
         UILabel *tableLabelDate = (UILabel *)[cell viewWithTag:101];
+        [tableLabelDate setFont:[UIFont fontWithName:@"AppleSDGothicNeo-Light" size:13]];
         tableLabelDate.text = [NSString stringWithFormat:@"%@-%@-%02ld",
                                [data->_pubdate substringWithRange:strYearRange],
                                [data->_pubdate substringWithRange:strMonthRange],
-                               (long)([data->_pubdate substringWithRange:strDayRange].intValue - thisWeekDay + 1)];
+                               day];
     }
     
     if (_category == MENU_ID_SERMON_VIDEO)

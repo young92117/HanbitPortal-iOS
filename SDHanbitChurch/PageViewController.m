@@ -54,26 +54,8 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
     if (_category == MENU_ID_CHURCH_INTRO) // 교회 소개
     {
         NSString *html = [NSString stringWithFormat:
-                          @"<html><body bgcolor=#CEF6F5 style=\"font-family:arial;color:black;font-size:15px;margin:10px\"> \
-                          <h3>교회 비전</h3> \
-                          <blockquote><p>하나님이 기뻐하시는 교회, 따뜻한 교회, 섬기는 교회</p></blockquote> \
-                          <h3>우리의 사명</h3> \
-                          <blockquote><p>하나님의 잃어버린 영혼을 찾아 예수 그리스도의 가정 공동체를 이루는 것이다</p></blockquote> \
-                          <h3>주제 성구</h3> \
-                          <blockquote><p>예베소서 4:13-16</p> \
-                          <p>우리가 다 하나님의 아들을 믿는 것과 아는 일에 하나가 되어 온전한 사람을 이루어 그리스도의 장성한 분량이 충만한 데까지 이르리니 이는 우리가 이제부터 어린아이가 되지 아니하여 사람의 궤술과 간사한 유혹에 빠져 모든 교훈의 풍조에 밀려 요동치 않게 하려 함이라 오직 사랑 안에서 참된 것을 하여 범사에 그에게까지 자랄찌라 그는 머리니 곧 그리스도라 그에게서 온 몸이 각 마디를 통하여 도움을 입음으로 연락하고 상합하여 각 지체의 분량대로 역사하여 그 몸을 자라게 하며 사랑 안에서 스스로 세우느니라</p> \
-                          <p>Ephesians 4:13-16</p> \
-                          <p>Until we all reach unity in the faith and in the knowledge of the Son of God and become mature, attaining to the whole measure of the fullness of Christ. Then we will no longer be infants, tossed back and forth by the waves, and blown here and there by every wind of teaching and by the cunning and craftiness of men in their deceitful scheming. Instead, speaking the truth in love, we will in all things grow up into him who is the Head, that is Christ. From him the whole body, joined and held together by every supporting ligament, grows and builds itself up in love, as each part does its work.</p></blockquote> \
-                          <h3>주제 찬송</h3> \
-                          <blockquote><p>찬송가 246장 (내 주의 나라와 / I love The Kingdom, Lord)</p></blockquote> \
-                          <h3>하나님이 기뻐하시는 교회</h3> \
-                          <blockquote><p>교회의 주인 되신 예수 그리스도의 말씀에 온전히 순종하고, 그 분만을 높이어 하나님께서 기뻐하시며, 하나님으로 충만한 교회를 목적한다. 기대감과 설레임의 예배 훈련으로 성장하는 제자 말씀에 지배받는 목회</p></blockquote> \
-                          <h3>따뜻한 교회</h3> \
-                          <blockquote><p>자신의 생명을 주심으로 우리를 사랑하신 예수님의 사랑으로 한 몸을 이룬 사랑이 넘치는 따뜻한 가족 공동체를 목적한다. 가정을 풍요롭게 하는 사역 가정같은 공동체 형성 치유함이 있는 성도의 교제</p></blockquote> \
-                          <h3>섬기는 교회</h3> \
-                          <blockquote><p>하나님의 명령에 따라 하나님 나라의 확장을 위하여 세상을 그리스도의 복음으로 변화시키는 섬기는 공동체가 됨을 목적한다.<br> \
-                          가정교회를 통한 섬김의 실천 이웃을 돌아보는 커뮤니티 사역 학원과 해외선교의 사명 실천</p></blockquote> \
-                          <p>&nbsp;</p></body></html>"];
+                          @"<html><body style=\"margin:0\"><img src=hanbit_overview.png width=\"%d\"></body></html>",
+                          (int)self.view.frame.size.width];
                           
         [_viewControl loadHTMLString:html baseURL:baseURL];
     }
@@ -87,7 +69,7 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
     }
     else if (_category == MENU_ID_MAINPASTOR) // 인사말
     {
-        NSLog(@"width=%f", self.view.frame.size.width);
+        //NSLog(@"width=%f", self.view.frame.size.width);
         NSString *html = [NSString stringWithFormat:
                           @"<html><body style=\"margin:0\"><img src=hanbit_greeting.png width=\"%d\"></body></html>",
                           (int)self.view.frame.size.width];

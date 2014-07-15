@@ -248,18 +248,19 @@ NSInteger tableCategory[5] = {MENU_ID_SERMON_COLUMN,
     _selectedCategory = MENU_ID_WEEKLY_ASSIGN;
 }
 
+// search in the database
 - (IBAction)manualRequest:(id)sender
 {
-    for (int i=0; i<5; i++)
-    {
-        NSInteger category = tableCategory[i];
-    
-        NSString *latestPubDate = [DBManager getLatestPubDate:category];
-        if (latestPubDate == nil)
-            latestPubDate = @"201401010000";
-    
-        [_manager fetchGroupsAtHanbit:category After:latestPubDate];
-    }
+//    for (int i=0; i<5; i++)
+//    {
+//        NSInteger category = tableCategory[i];
+//
+//        NSString *latestPubDate = [DBManager getLatestPubDate:category];
+//        if (latestPubDate == nil)
+//            latestPubDate = @"201401010000";
+//
+//        [_manager fetchGroupsAtHanbit:category After:latestPubDate];
+//    }
 }
 
 #pragma mark - Notification Observer

@@ -58,6 +58,7 @@
 		E1231923193D86EE007FC07F /* AppIcon_80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = E1231920193D86EE007FC07F /* AppIcon_80x80.png */; };
 		E1231924193D86EE007FC07F /* AppIcon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = E1231921193D86EE007FC07F /* AppIcon_120x120.png */; };
 		E12351D818C2F751003C81BD /* hanbit_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E12351D718C2F751003C81BD /* hanbit_logo.png */; };
+		E1321E8E1973C3410025C1A6 /* hanbit_overview.png in Resources */ = {isa = PBXBuildFile; fileRef = E1321E8D1973C3410025C1A6 /* hanbit_overview.png */; };
 		E137397918D17D58004C37A2 /* HanbitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E137397818D17D58004C37A2 /* HanbitManager.m */; };
 		E137397C18D17FC1004C37A2 /* GroupBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E137397B18D17FC1004C37A2 /* GroupBuilder.m */; };
 		E1379F5A18C3A80B004ACD79 /* brightsky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1379F5918C3A80B004ACD79 /* brightsky.jpg */; };
@@ -155,6 +156,7 @@
 		E1231920193D86EE007FC07F /* AppIcon_80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon_80x80.png; path = Images/AppIcon_80x80.png; sourceTree = "<group>"; };
 		E1231921193D86EE007FC07F /* AppIcon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon_120x120.png; path = Images/AppIcon_120x120.png; sourceTree = "<group>"; };
 		E12351D718C2F751003C81BD /* hanbit_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hanbit_logo.png; path = Images/hanbit_logo.png; sourceTree = "<group>"; };
+		E1321E8D1973C3410025C1A6 /* hanbit_overview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hanbit_overview.png; path = Images/hanbit_overview.png; sourceTree = "<group>"; };
 		E137397618D17D02004C37A2 /* HanbitManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HanbitManagerDelegate.h; sourceTree = "<group>"; };
 		E137397718D17D58004C37A2 /* HanbitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanbitManager.h; sourceTree = "<group>"; };
 		E137397818D17D58004C37A2 /* HanbitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanbitManager.m; sourceTree = "<group>"; };
@@ -344,6 +346,7 @@
 				E13BCF4A18C4E39D008BF212 /* hanbit_address.png */,
 				E1FD70221973A41E00F98F0D /* hanbit_greeting.png */,
 				E13BCF4B18C4E39D008BF212 /* hanbit_logo_160.png */,
+				E1321E8D1973C3410025C1A6 /* hanbit_overview.png */,
 				E107138119555F460037BC97 /* main_actions_icon.png */,
 				E107138219555F460037BC97 /* main_actions.png */,
 				E10713A3195566130037BC97 /* main_map_icon.png */,
@@ -502,6 +505,7 @@
 				E1C36DB018C38B5D00AF90DE /* bg_main_ministry.jpg in Resources */,
 				E13BCF4F18C4E39D008BF212 /* hanbit_logo_160.png in Resources */,
 				E107139219555F460037BC97 /* main_actions_icon.png in Resources */,
+				E1321E8E1973C3410025C1A6 /* hanbit_overview.png in Resources */,
 				E10713A019555F460037BC97 /* main_share.png in Resources */,
 				E1002FA018C1D2180079F2D8 /* InfoPlist.strings in Resources */,
 				E12351D818C2F751003C81BD /* hanbit_logo.png in Resources */,

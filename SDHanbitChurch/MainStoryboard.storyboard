@@ -396,21 +396,23 @@
                                     <segue destination="wQj-YV-tej" kind="push" identifier="showShareDetail" id="lyX-NR-dL7"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="titleDateCell" rowHeight="48" id="mmo-xS-BGb">
-                                <rect key="frame" x="0.0" y="222" width="320" height="48"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="titleDateCell" rowHeight="62" id="mmo-xS-BGb">
+                                <rect key="frame" x="0.0" y="222" width="320" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mmo-xS-BGb" id="vlN-Tq-11W">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="47"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="61"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drG-zN-W02">
-                                            <rect key="frame" x="20" y="4" width="280" height="23"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="drG-zN-W02">
+                                            <rect key="frame" x="20" y="0.0" width="280" height="42"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <string key="text">Title
+</string>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gss-ey-66y">
-                                            <rect key="frame" x="20" y="29" width="280" height="18"/>
+                                            <rect key="frame" x="20" y="42" width="114" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.32993368299999998" green="0.34324832529999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -638,7 +640,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Quf-hg-sm9">
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="0uT-tP-zMJ"/>
-                        <barButtonItem key="rightBarButtonItem" title="Update" id="NBe-ky-TTl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="NBe-ky-TTl">
                             <connections>
                                 <action selector="manualRequest:" destination="1SV-vQ-cnS" id="x09-0O-Uim"/>
                             </connections>
@@ -694,9 +696,9 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Ear-vN-ABf"/>
-        <segue reference="lIt-Pj-GzJ"/>
-        <segue reference="LsH-Yu-v3u"/>
-        <segue reference="Z48-pI-mNA"/>
+        <segue reference="3Hf-n4-LwN"/>
+        <segue reference="sGP-Yj-1Hp"/>
+        <segue reference="pcX-5n-nCb"/>
         <segue reference="lyX-NR-dL7"/>
     </inferredMetricsTieBreakers>
 </document>

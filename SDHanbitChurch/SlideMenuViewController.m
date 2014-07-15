@@ -144,16 +144,19 @@ NSInteger slideMenuCategory[14] = { MENU_ID_NULL,
         menuImageView.image = [UIImage imageNamed:imageName];
         
         UILabel *menuNameLabel = (UILabel *)[cell viewWithTag:101];
-        menuNameLabel.text = self.menuItems[indexPath.row]; 
+        [menuNameLabel setFont:[UIFont fontWithName:@"AppleSDGothicNeo-Light" size:17]];
+        menuNameLabel.text = self.menuItems[indexPath.row];
     }
     else if( slideMenuIndex[indexPath.row] == 0 )
     {
         UILabel *menuNameLabel = (UILabel *)[cell viewWithTag:101];
+        [menuNameLabel setFont:[UIFont fontWithName:@"AppleSDGothicNeo-Light" size:10]];
         menuNameLabel.text = @"하나님이 기뻐하시는 교회, 따뜻한 교회, 섬기는 교회";
     }
     else
     {
         UILabel *menuNameLabel = (UILabel *)[cell viewWithTag:200];
+        [menuNameLabel setFont:[UIFont fontWithName:@"AppleSDGothicNeo-Light" size:12]];
         menuNameLabel.text = self.menuItems[indexPath.row];
     }
     
