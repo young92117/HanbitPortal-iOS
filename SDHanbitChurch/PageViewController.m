@@ -82,8 +82,10 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
         NSString *html = [NSString stringWithFormat:
                           @"<html><body><iframe src=\"https://docs.google.com/spreadsheet/pub?key=0Ahw6lNCJGfZ6dDNJcm9IT0lqVWVZNU5Zc3B0ZklfSGc&#038;output=html\" width=\"100%%\" scrolling=\"no\" class=\"iframe-class\" frameborder=\"0\"></iframe></body></html>"];
         
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: YES];
         _viewControl.scalesPageToFit = YES;
         [_viewControl loadHTMLString:html baseURL:nil];
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: NO];
     }
     else if (_category == MENU_ID_MAINPASTOR) // 인사말
     {
@@ -99,8 +101,10 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
         NSURL *url = [NSURL URLWithString:@"http://www.sdhanbit.org/wordpress/mobile/staff.html"];
         NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
         
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: YES];
         //_viewControl.scalesPageToFit = YES;
         [_viewControl loadRequest:requestObj];
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: NO];
     }
     else if (_category == MENU_ID_WORSHIP_INFO) // 예배 안내
     {
@@ -147,8 +151,10 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
         NSURL *url = [NSURL URLWithString:@"http://www.sdhanbit.org/wordpress/mobile/culture_school.html"];
         NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
         
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: YES];
         _viewControl.scalesPageToFit = YES;
         [_viewControl loadRequest:requestObj];
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: NO];
     }
 }
 

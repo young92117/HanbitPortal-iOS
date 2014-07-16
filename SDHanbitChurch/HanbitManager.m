@@ -14,7 +14,9 @@
 
 - (void)fetchGroupsAtHanbit:(NSInteger)category After:(NSString *)date
 {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: YES];
     [self.communicator searchItemsAtHanbit:category After:date];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible: NO];
 }
 
 #pragma mark - HanbitCommunicatorDelegate
