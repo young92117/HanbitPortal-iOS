@@ -135,7 +135,7 @@
         NSInteger thisWeekDay = [[calender components: NSWeekdayCalendarUnit fromDate:pubDate] weekday];
         
         NSRange strYearRange = {0,4}, strMonthRange = {4,2}, strDayRange = {6,2};
-        UInt32 day = [data->_pubdate substringWithRange:strDayRange].intValue;
+        NSInteger day = [data->_pubdate substringWithRange:strDayRange].intValue;
         if (_category == MENU_ID_SERMON_VIDEO)
             day = day - thisWeekDay + 1;
         
@@ -144,7 +144,7 @@
         tableLabelDate.text = [NSString stringWithFormat:@"%@-%@-%02ld",
                                [data->_pubdate substringWithRange:strYearRange],
                                [data->_pubdate substringWithRange:strMonthRange],
-                               day];
+                               (long)day];
     }
     
     if (_category == MENU_ID_SERMON_VIDEO)

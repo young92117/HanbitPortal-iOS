@@ -54,8 +54,26 @@ NSString *backImageList[5] = {@"bird.jpg", @"yellowtree2.jpg", @"cross.jpg", @"g
     if (_category == MENU_ID_CHURCH_INTRO) // 교회 소개
     {
         NSString *html = [NSString stringWithFormat:
-                          @"<html><body style=\"margin:0\"><img src=hanbit_overview.png width=\"%d\"></body></html>",
-                          (int)self.view.frame.size.width];
+                          @"<html><head> \
+                          <style type=\"text/css\"> \
+                          body { \
+                          font-family: \"AppleSDGothicNeo-Regular\"; \
+                          margin: 0px; } \
+                          </style></head> \
+                          <body> \
+                          <img src=hanbit_overview.png width=\"%d\"> <br><br>\
+                          <table border=0 style=\"color:black;font-size:11px;margin-left:10px;margin-right:10px;\"> \
+                          <tr><td valign=center width=\"%d\"><font face=\"AppleSDGothicNeo-Bold\" color=#0080FF>교회 위치 안내</font><br> \
+                          <font face=\"AppleSDGothicNeo-Bold\">San Diego Hanbit Church</font><br> \
+                          4717 Cardin St.<br>San Diego, CA 92111<br><br> \
+                          <font face=\"AppleSDGothicNeo-Bold\" color=#0080FF>교회 연락처</font><br> \
+                          Phone: (858) 874-2412<br> \
+                          Email: <a href=\"mailto:info@sdhanbit.org\">info@sdhanbit.org</a><br> \
+                          <td valign=center halign=left width=\"%d\"><img src=hanbit_logo_160.png width=\"%d\"></td></tr> \
+                          </table> \
+                          <br><br></body></html>",
+                          (int)self.view.frame.size.width, (int)self.view.frame.size.width/2,
+                          (int)self.view.frame.size.width/2 - 10, (int)self.view.frame.size.width/2 - 30];
                           
         [_viewControl loadHTMLString:html baseURL:baseURL];
     }
